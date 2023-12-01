@@ -1,0 +1,8 @@
+#h1 {
+  background: linear-gradient(180deg, #6800B8 0%, #A869FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*# sourceMappingURL=styles.css.map */
