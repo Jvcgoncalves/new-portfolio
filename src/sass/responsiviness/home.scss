@@ -1,3 +1,252 @@
+@media (min-width:1660px) {
+  .header{
+    height: 8rem;
+    .navbar{
+      .header-menu{
+        .navbar-brand{
+          width: 4.75rem;
+          height: 4.75rem;
+        }
+  
+        .collapse{
+  
+          .navbar-nav{
+            flex-direction: row;
+            gap: 3rem;
+  
+            .nav-link{
+              font-size: 2.2rem;
+  
+              &::before{
+                height: .25rem;
+              } // config to use with hover, like a underlined text
+            } // end .nav-link
+          } //end .navbar-nav
+        } // end .collapse
+      } // end .header-menu
+    } // end .navbar
+  } // end .header
+  
+  .main-block{
+    width: 100%;
+    margin-top: 8rem;
+  
+    #down-arrow > img{
+      width: 4rem;
+      animation: arrowUpAndDown 1.5s infinite;
+    }
+  
+    .container{
+     max-width: 90%; 
+    }
+  
+    .start-block{ // start block styles
+      height: 38rem;
+      .start-block-itens{  
+        .text-block{
+          max-width: 95%;
+          #introduction-text{
+            font-size: 3rem;
+          } 
+  
+          #occupation-area{
+            font-size: 3.5rem;
+          }
+  
+          p{
+            font-size: 2rem;
+          }
+  
+          .buttons-div{ 
+            .btn-primary{
+              font-size: 2rem;
+            } // .btn-primary end
+  
+            .btn-outline-primary{
+              font-size: 2rem;
+              border-width: .3rem ;
+            } // .btn-outline-primary end
+          } // .buttons-div end
+        } // .text-block end
+        
+        .image-block{
+          width: 100%;
+          height: 26rem;
+          
+          div{
+            width: 26rem;
+            height: 100%;
+          }
+        } // .image-block end
+      } // .start-block-items end
+    } // .start-block end
+    
+    .techs-block{
+      h2{
+        font-size: 3.4rem;
+        margin-top: 1rem;
+      }
+  
+      .techs-block-itens{
+        gap: 3rem;
+        h3{
+          font-size: 2.8rem;
+        }
+  
+        span{
+          font-size: 1.9rem;
+        }
+  
+        // Config to techs part
+        .techs-part{ 
+            height: 34rem;
+          .elements{
+            div{
+              img{
+                width: 4rem;
+              } 
+            } // div end
+          } // .elements end
+        } // Techs part styles end
+  
+        // Config to abilities part
+        .abilities-part{   
+          height: 34rem;
+          .elements{
+            div{
+              img{
+                width: 5.5rem;
+              }
+            }
+          } // .elements end
+        } // .abilities-part end
+      } // .techs-block-itens end
+    }
+    
+    .projects-block{
+      
+      .projects-block-items{
+  
+        h2{
+          font-size: 3.4rem;
+          margin-top: .5rem;
+        }
+  
+        .swiper{
+          .swiper-wrapper{
+              .swiper-slide{
+                .projects{
+                  height: 40rem !important;
+                  grid-template-rows: 21rem auto auto;  
+  
+                  section{
+                    h4{
+                      font-size: 3rem;
+                      margin-bottom: .3rem;
+                    }
+                    p{
+                      font-size: 1.8rem;
+                    }
+                  } // end section
+  
+                  .techs-used{
+                    grid-area: techs;
+                    gap: 3rem;
+                  div{
+                    font-size: 1.8rem;
+                    img{
+                      width: 3.75rem;
+                    }
+                  }
+                } // end techs-used
+  
+                .buttons-div{
+                  padding-bottom: 1rem;
+  
+                  a.btn-primary{
+                    font-size: 1.9rem;
+                    padding: .5rem 1.5rem;
+                  }
+                }
+              } // end projects
+            }  // end swiper slider 
+          } // end swiper wrapper
+  
+          #swiper-pagination{
+            height: 3rem;
+            .swiper-pagination-bullet{
+              margin-top: 1.3rem;
+              width: 1.2rem;
+              height: 1.2rem;
+            }
+          }
+        } // .swiper end
+      } // .projects-block-items end
+    } // .projects-block end
+  
+    .contact-block{
+      h2{
+        font-size: 3.4rem;
+        margin-top: 1rem;
+      }
+      .contact-block-items{
+        h3{
+          font-size: 2.8rem;
+        }
+  
+        nav.d-flex{
+  
+          .btn.btn-outline-primary{
+            font-size: 1.8rem;
+            border-width: .3rem;
+          } // .btn.btn-outline-primary end
+  
+          .contact-texts{
+            font-size: 1.8rem;
+          }
+  
+          .contact-section-images{
+            width: 2.5rem;
+          }
+        } // nav end
+         
+            .form{
+            position: relative;
+            right: 0;
+            
+            .row{
+              position: relative;
+              .form-control{
+                font-size: 1.8rem;
+  
+                &:focus{
+                  box-shadow: $bg-color;
+                }
+              }
+  
+              label{
+                font-size: 1.8rem;
+              }
+  
+              button[type="submit"]{
+                font-size: 2.5rem;
+              }
+            } // .row end
+          } // .form end      
+      } // .contact-block end
+      
+    } // .contact-block end
+  } // .main-block end
+  
+  .footer{
+    background-color: $bg-dark;
+    height: 7rem;
+    p{
+      font-size: 2rem;
+    }
+  }
+}
+
 @media (max-width:1023px){
   .header{
     
@@ -523,7 +772,7 @@
   
         .swiper{
           .swiper-button-prev{
-            left: 3rem;
+            left: 1rem;
             top: unset;
             bottom: 0 !important;
           }
@@ -625,9 +874,6 @@
 
           .row{
             position: relative;
-            div{
-              padding: 0;
-            }
             .form-control{
   
               &:focus{
@@ -673,6 +919,7 @@
     
     .start-block{
       .start-block-itens{
+        justify-content: center;
         .text-block{
           #introduction-text{
             font-size: 1.6rem;
@@ -1085,5 +1332,22 @@
         } // .swiper end
       } // .projects-block-items end
     } // .projects-block end
+
+    .contact-block{
+      .contact-block-items{
+        nav.d-flex{
+          .nav-item{
+            gap: .25rem !important;
+          }
+          .contact-texts{
+            font-size: .9rem;
+          }
+          .btn.btn-outline-primary{
+            font-size: .9rem;
+            padding: .3rem .5rem;
+          }
+        } 
+      } 
+    } 
   }
 }

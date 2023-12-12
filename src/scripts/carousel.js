@@ -18,30 +18,22 @@ export async function addCarousel(){
       prevEl: '.swiper-button-prev',
     },
 
-    
+    effect: 'coverflow',
+      coverflowEffect: {
+        rotate: -15,
+      },
+
     breakpoints: {
       // when window width is >= 320px
       1024: {
         slidesPerView: 1.5,
         spaceBetween:32,
-        centeredSlides:true,
-
-        effect: 'coverflow',
-        coverflowEffect: {
-          rotate: -10,
-          slideShadows: true,
-        }
+        centeredSlides:true,  
       },
       794: {
         slidesPerView: 1.25,
         spaceBetween:24,
         centeredSlides:true,
-
-        effect: 'coverflow',
-        coverflowEffect: {
-          rotate: -10,
-          slideShadows: true,
-        }
       },
       
     }

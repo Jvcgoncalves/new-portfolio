@@ -203,6 +203,7 @@ body{
 
     .techs-block-itens{
       grid-template-columns: 1fr 1fr;
+      gap: 3rem;
 
       h3{
         @include font-styles($main-font,1.8rem,$light-font);
@@ -216,8 +217,7 @@ body{
       // Config to techs part
       .techs-part{ 
         height: 30rem;
-        justify-self: flex-start;
-        width: 95%;
+        width: 100%;
         box-shadow: 0px 0px 10px 3px #151515 inset;
         transition: .5s;
         
@@ -234,9 +234,7 @@ body{
       // Config to abilities part
       .abilities-part{
         height: 30rem;
-        width: 95%;
-        justify-self: flex-end;
-        align-self: flex-start;
+        width: 100%;
         box-shadow: 0px 0px 10px 3px $bg-dark inset;
         transition: .5s;   
         
@@ -277,7 +275,7 @@ body{
                 max-width: 100% !important;
                 height: 34rem !important;
                 background-color: $purple-medium;
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 1.25fr 1fr;
                 grid-template-rows: 17rem auto auto;
                 grid-template-areas: 
                 'image techs'
@@ -295,7 +293,7 @@ body{
                 section{
                   grid-area: text;
                   h4{
-                    @include font-styles($main-font,2.2rem,$light-font);
+                    @include font-styles($main-font,2.4rem,$light-font);
                     letter-spacing: .1%;
                     margin-bottom: .1rem;
                   }
@@ -310,10 +308,10 @@ body{
                   grid-area: techs;
 
                 div{
-                  @include font-styles($second-font,1rem,$light-font);
+                  @include font-styles($second-font,1.2rem,$light-font);
                   font-weight:200;
                   img{
-                    width: 2.2rem;
+                    width: 2.5rem;
                   }
                 }
               } // end techs-used

@@ -216,6 +216,7 @@ body {
 }
 .main-block .techs-block .techs-block-itens {
   grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 .main-block .techs-block .techs-block-itens h3 {
   font-family: "Bebas Neue", arial, sans-serif;
@@ -230,8 +231,7 @@ body {
 }
 .main-block .techs-block .techs-block-itens .techs-part {
   height: 30rem;
-  justify-self: flex-start;
-  width: 95%;
+  width: 100%;
   box-shadow: 0px 0px 10px 3px #151515 inset;
   transition: 0.5s;
 }
@@ -241,9 +241,7 @@ body {
 }
 .main-block .techs-block .techs-block-itens .abilities-part {
   height: 30rem;
-  width: 95%;
-  justify-self: flex-end;
-  align-self: flex-start;
+  width: 100%;
   box-shadow: 0px 0px 10px 3px #202020 inset;
   transition: 0.5s;
 }
@@ -272,7 +270,7 @@ body {
   max-width: 100% !important;
   height: 34rem !important;
   background-color: #5900A3;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   grid-template-rows: 17rem auto auto;
   grid-template-areas: "image techs" "text text" "buttons buttons";
 }
@@ -288,7 +286,7 @@ body {
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
   font-family: "Bebas Neue", arial, sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #F5F5F5;
   letter-spacing: 0.1%;
   margin-bottom: 0.1rem;
@@ -305,12 +303,12 @@ body {
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
   font-family: "Lexend", arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #F5F5F5;
   font-weight: 200;
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
-  width: 2.2rem;
+  width: 2.5rem;
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div {
   width: max-content;
@@ -424,6 +422,174 @@ body {
   color: #F5F5F5;
 }
 
+@media (min-width: 1660px) {
+  .header {
+    height: 8rem;
+  }
+  .header .navbar .header-menu .navbar-brand {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
+  .header .navbar .header-menu .collapse .navbar-nav {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .header .navbar .header-menu .collapse .navbar-nav .nav-link {
+    font-size: 2.2rem;
+  }
+  .header .navbar .header-menu .collapse .navbar-nav .nav-link::before {
+    height: 0.25rem;
+  }
+  .main-block {
+    width: 100%;
+    margin-top: 8rem;
+  }
+  .main-block #down-arrow > img {
+    width: 4rem;
+    animation: arrowUpAndDown 1.5s infinite;
+  }
+  .main-block .container {
+    max-width: 90%;
+  }
+  .main-block .start-block {
+    height: 38rem;
+  }
+  .main-block .start-block .start-block-itens .text-block {
+    max-width: 95%;
+  }
+  .main-block .start-block .start-block-itens .text-block #introduction-text {
+    font-size: 3rem;
+  }
+  .main-block .start-block .start-block-itens .text-block #occupation-area {
+    font-size: 3.5rem;
+  }
+  .main-block .start-block .start-block-itens .text-block p {
+    font-size: 2rem;
+  }
+  .main-block .start-block .start-block-itens .text-block .buttons-div .btn-primary {
+    font-size: 2rem;
+  }
+  .main-block .start-block .start-block-itens .text-block .buttons-div .btn-outline-primary {
+    font-size: 2rem;
+    border-width: 0.3rem;
+  }
+  .main-block .start-block .start-block-itens .image-block {
+    width: 100%;
+    height: 26rem;
+  }
+  .main-block .start-block .start-block-itens .image-block div {
+    width: 26rem;
+    height: 100%;
+  }
+  .main-block .techs-block h2 {
+    font-size: 3.4rem;
+    margin-top: 1rem;
+  }
+  .main-block .techs-block .techs-block-itens {
+    gap: 3rem;
+  }
+  .main-block .techs-block .techs-block-itens h3 {
+    font-size: 2.8rem;
+  }
+  .main-block .techs-block .techs-block-itens span {
+    font-size: 1.9rem;
+  }
+  .main-block .techs-block .techs-block-itens .techs-part {
+    height: 34rem;
+  }
+  .main-block .techs-block .techs-block-itens .techs-part .elements div img {
+    width: 4rem;
+  }
+  .main-block .techs-block .techs-block-itens .abilities-part {
+    height: 34rem;
+  }
+  .main-block .techs-block .techs-block-itens .abilities-part .elements div img {
+    width: 5.5rem;
+  }
+  .main-block .projects-block .projects-block-items h2 {
+    font-size: 3.4rem;
+    margin-top: 0.5rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
+    height: 40rem !important;
+    grid-template-rows: 21rem auto auto;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section p {
+    font-size: 1.8rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used {
+    grid-area: techs;
+    gap: 3rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
+    font-size: 1.8rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
+    width: 3.75rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div {
+    padding-bottom: 1rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
+    font-size: 1.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper #swiper-pagination {
+    height: 3rem;
+  }
+  .main-block .projects-block .projects-block-items .swiper #swiper-pagination .swiper-pagination-bullet {
+    margin-top: 1.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .main-block .contact-block h2 {
+    font-size: 3.4rem;
+    margin-top: 1rem;
+  }
+  .main-block .contact-block .contact-block-items h3 {
+    font-size: 2.8rem;
+  }
+  .main-block .contact-block .contact-block-items nav.d-flex .btn.btn-outline-primary {
+    font-size: 1.8rem;
+    border-width: 0.3rem;
+  }
+  .main-block .contact-block .contact-block-items nav.d-flex .contact-texts {
+    font-size: 1.8rem;
+  }
+  .main-block .contact-block .contact-block-items nav.d-flex .contact-section-images {
+    width: 2.5rem;
+  }
+  .main-block .contact-block .contact-block-items .form {
+    position: relative;
+    right: 0;
+  }
+  .main-block .contact-block .contact-block-items .form .row {
+    position: relative;
+  }
+  .main-block .contact-block .contact-block-items .form .row .form-control {
+    font-size: 1.8rem;
+  }
+  .main-block .contact-block .contact-block-items .form .row .form-control:focus {
+    box-shadow: #F7F0FF;
+  }
+  .main-block .contact-block .contact-block-items .form .row label {
+    font-size: 1.8rem;
+  }
+  .main-block .contact-block .contact-block-items .form .row button[type=submit] {
+    font-size: 2.5rem;
+  }
+  .footer {
+    background-color: #202020;
+    height: 7rem;
+  }
+  .footer p {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 1023px) {
   .header #responsive-menu {
     display: block !important;
@@ -787,7 +953,7 @@ body {
     letter-spacing: 1%;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-button-prev {
-    left: 3rem;
+    left: 1rem;
     top: unset;
     bottom: 0 !important;
   }
@@ -862,9 +1028,6 @@ body {
   .main-block .contact-block .contact-block-items .form .row {
     position: relative;
   }
-  .main-block .contact-block .contact-block-items .form .row div {
-    padding: 0;
-  }
   .main-block .contact-block .contact-block-items .form .row .form-control:focus {
     box-shadow: #F7F0FF;
   }
@@ -892,6 +1055,9 @@ body {
   }
 }
 @media (max-width: 475px) {
+  .main-block .start-block .start-block-itens {
+    justify-content: center;
+  }
   .main-block .start-block .start-block-itens .text-block #introduction-text {
     font-size: 1.6rem;
   }
@@ -1183,6 +1349,16 @@ body {
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
     font-size: 0.9rem;
     margin: 0 auto;
+  }
+  .main-block .contact-block .contact-block-items nav.d-flex .nav-item {
+    gap: 0.25rem !important;
+  }
+  .main-block .contact-block .contact-block-items nav.d-flex .contact-texts {
+    font-size: 0.9rem;
+  }
+  .main-block .contact-block .contact-block-items nav.d-flex .btn.btn-outline-primary {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
   }
 }
 
