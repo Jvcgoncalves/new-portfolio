@@ -1,9 +1,17 @@
 // variables
 
+@import "variables/mixins/mixins.scss"; // mixins
 @import "variables/colors/colors.scss"; // colors
 @import "variables/fonts/fonts.scss"; // fonts
-@import "variables/mixins/mixins.scss"; // mixins
+
+// Animations
+
+@import "animations/animations.scss";
 
 // Pages
 
 @import "pages/home.scss";
+
+// Responsive part
+
+@import "responsiviness/home.scss";

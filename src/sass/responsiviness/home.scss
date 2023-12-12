@@ -1,0 +1,1089 @@
+@media (max-width:1023px){
+  .header{
+    
+    #responsive-menu{
+      display: block !important;
+      background-color: transparent;
+      border: none;
+      font-size: 3rem;
+      color: $light-font;
+    } 
+    .navbar{
+
+      .header-menu{
+        max-width: min-content;
+        margin: 0;
+        .navbar-brand{
+          width: 3rem;
+          height: 3rem;
+        }
+
+        #main-navbar{
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          flex-basis: auto;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 0;
+          overflow: hidden;
+          visibility: hidden;
+          min-height: calc(100vh - 6rem);
+          background-color: #20202000;
+          z-index: 1010;
+
+          .navbar-nav{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            z-index: 1010;
+            background-color: $purple-medium;
+            min-height: calc(100vh - 6rem);
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+            transition: all .3s ease-in-out;
+
+            .nav-link{
+              position: relative;
+              font-size: 1.4rem;
+              font-weight: 300;
+
+              &::before{
+                content: "";
+                position: absolute;
+                bottom: .5rem;
+                left: 0;
+                width: 0;
+                height: .1rem;
+                transition: width .3s;
+              } // config to use with hover, like a underlined text
+
+              &:hover::before{ 
+                width: 80%;
+                background-color: $bg-color;
+              }
+
+              &.active::before{
+                width: 70%;
+                background-color: $bg-color;
+
+              }
+
+            } // end .nav-link
+          } //end .navbar-nav
+
+          &.actived{
+            width: 100%;
+            visibility: visible;
+            background-color: #2020208a;
+            transition: background-color .5s;
+
+            .navbar-nav{
+              width: 55%;
+            }
+          }
+        } // end .collapse
+      } // end .header-menu
+    } // .header end
+  }
+  .main-block{
+    margin-top: 6rem;
+    #down-arrow > img{
+      display: none;
+    }
+    .start-block{ // start block styles
+      height: 29rem;
+
+      .start-block-itens{
+  
+        .text-block{
+          max-width: 90%;
+          #introduction-text{
+            font-size: 2.1rem;
+          } 
+  
+          #occupation-area{
+            font-size: 2.3rem;
+          }
+  
+          p{
+            font-size: 1.1rem;
+          }
+  
+          .buttons-div{
+  
+            .btn-primary,.btn-outline-primary{
+              font-size: 1.1rem;
+
+              &:hover{
+                transform: scale(1.1);
+              }
+            } // .btn-primary && .btn-outline-primary end
+          } // .buttons-div end
+        } // .text-block end
+        
+        .image-block{
+          width: 100%;
+          height: 20rem;
+          
+          div{
+            width: 16rem;
+            height: 16rem;
+            background-color: $light-purple;
+            border-radius: 100%;
+            img{
+              width: 90%;
+              height: 90%;
+              animation: upAndDown 3s infinite normal;
+            }
+          }
+        } // .image-block end
+      } // .start-block-items end
+    } // .start-block end
+
+    .techs-block{
+      background-color: $purple-medium;
+  
+      h2{
+        font-size: 2rem;
+      }
+  
+      .techs-block-itens{
+
+        h3{
+          font-size: 1.6rem;
+        }
+  
+        span{
+          font-size: 1.2rem;
+        }
+
+        // Config to techs part
+        .techs-part{ 
+          height: 28rem;          
+          .elements{
+            div{
+              img{
+                width: 2.3rem;
+                height: auto;
+              }
+            } // div end
+          } // .elements end
+        } // Techs part styles end
+  
+        // Config to abilities part
+        .abilities-part{
+          height: 28rem;              
+          .elements{          
+            div{
+              img{
+                width: 2.8rem;
+                height: auto;
+              }
+            }
+          }
+        } // .abilities-part end
+      } // .techs-block-itens end
+    } // .techs-block end
+
+    .projects-block{
+    
+      .projects-block-items{
+        h2{
+          font-size: 2rem;
+        }
+        .swiper{
+
+          .swiper-wrapper{
+  
+              .swiper-slide{
+                .projects{
+                  max-width: 100% !important;
+                  height: 30rem !important;
+                  background-color: $purple-medium;
+                  grid-template-columns: 1.25fr 1fr;
+
+                  grid-template-rows: 16rem min-content auto;
+                  section{
+                    h4{
+                      font-size: 1.8rem;
+                    }
+                    p{
+                      font-size: 1.1rem;
+                    }
+                  } // end section
+  
+                  .techs-used{
+                    grid-area: techs;
+  
+                  div{
+                    img{
+                      width: 2.2rem;
+                    }
+                  }
+                } // end techs-used
+              } // end projects
+            }  // end swiper slider 
+          } // end swiper wrapper
+  
+          #swiper-pagination{
+            position: unset;
+            .swiper-pagination-bullet{
+              margin-top: 1rem;
+              width: .8rem;
+              height: .8rem;
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active{
+              background-color: $purple-medium;
+            }
+          }
+        } // .swiper end
+      } // .projects-block-items end
+    } // .projects-block end
+
+    .contact-block{
+      background-color: $purple-medium;
+      height: max-content;
+
+      h2{
+        font-size: 2rem;
+      }
+
+      .contact-block-items{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+  
+        h3{
+          font-size: 1.4rem;
+        }
+      } // .contact-block end      
+    } // .contact-block end
+  } // .main-block end
+}
+
+@media (max-width: 794px){
+  .main-block{
+    margin-top: 9rem;
+    .start-block{
+      height: 100%;
+      .start-block-itens{
+        grid-template-columns: 1fr;
+        .text-block{
+          margin: auto;
+          width: 100%;
+        }
+      } // .start-block-itens end
+    } // .start-block end
+
+    .techs-block{
+      background-color: $purple-medium;
+  
+      h2{
+        font-size: 2rem;
+      }
+  
+      .techs-block-itens{
+        grid-template-columns: 1fr;
+        h3{
+          font-size: 1.85rem;
+        }
+  
+        span{
+          font-size: 1.5rem;
+        }
+
+        gap: 2rem;
+
+        // Config to techs part
+        .techs-part, .abilities-part{
+          min-height: 5rem;
+          max-height: min-content;
+          justify-self: center;
+          width: 100%;
+        }
+        .techs-part{ 
+          .elements{
+            div{
+              img{
+                width: 2.75rem;
+                height: auto;
+              }
+            } // div end
+          } // .elements end
+        } // Techs part styles end
+  
+        // Config to abilities part
+        .abilities-part{      
+          .elements{          
+            div{
+              img{
+                width: 4rem;
+                height: auto;
+              }
+            }
+          }
+        } // .abilities-part end
+      } // .techs-block-itens end
+    } // .techs-block end
+    .projects-block{
+    
+      .projects-block-items{
+  
+        h2{
+          font-weight: 500;
+        }
+  
+        .swiper{
+          
+          .swiper-button-next{
+            right: 1.6rem;
+            top: unset;
+            bottom: 0 !important;
+          }
+          .swiper-button-prev{
+            left: 1.2rem;
+            top: unset;
+            bottom: 0 !important;
+          }
+          .swiper-button-next,.swiper-button-prev{
+            &::after{
+              font-size: 2rem;
+            }
+          }
+
+          .swiper-wrapper{
+  
+              .swiper-slide{
+
+                .projects{
+                  max-width: 91.5% !important;
+                  height: 32rem !important;
+                  background-color: $purple-medium;
+                  grid-template-columns: 1fr 1fr;
+                  grid-template-rows: 16rem auto auto;
+                  gap: .5rem 1rem !important;
+  
+                  img.rounded{
+                    width: 100%;
+                    height: 100%;
+                    filter: brightness(0.8);
+                  }
+  
+                  .techs-used{
+                    max-width: 100%;
+                    div{
+                      img{
+                        width: 2.2rem;
+                      }
+                    }
+                } // end techs-used
+  
+                .buttons-div{
+                  width: max-content;
+                  grid-area: buttons;
+  
+                  a.btn-primary{
+                    font-size: 1.2rem;
+                  }
+                }
+              } // end projects
+            }  // end swiper slider 
+          } // end swiper wrapper
+  
+          #swiper-pagination{
+            position: unset;
+            display: flex;
+            height: 3rem;
+            align-items: center;
+            justify-content: center;
+            .swiper-pagination-bullet{
+              margin-top: 0;
+              width: .8rem;
+              height: .8rem;
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active{
+              background-color: $purple-medium;
+            }
+          }
+        } // .swiper end
+      } // .projects-block-items end
+    } // .projects-block end
+  } // .main-block end
+
+  .footer{
+    p{
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .main-block{
+    margin-top: 7.5rem;
+    .start-block{
+      .start-block-itens{
+        .text-block{
+          #introduction-text{
+            font-size: 1.6rem;
+          } 
+  
+          #occupation-area{
+            font-size: 1.8rem;
+          }
+  
+          p{
+            font-size: 1rem;
+            margin-bottom: 0 !important;
+          }
+
+          .buttons-div{
+            .btn-primary,.btn-outline-primary{
+              padding: .5rem 1rem !important;
+            } // .btn-primary && .btn-outline-primary end
+          } // .buttons-div end
+        } // .text-block end
+        
+        .image-block{
+          height: 18rem;
+          
+          div{
+            width: 15rem;
+            height: 15rem;
+          }
+        } // .image-block end
+      } // .start-block-itens end
+    } // .start-block end
+
+    .techs-block{
+      background-color: $purple-medium;
+  
+      h2{
+        font-size: 2.2rem;
+        letter-spacing: 1%;
+      }
+  
+      .techs-block-itens{
+        grid-template-columns: 1fr;
+        h3{
+          font-size: 1.8rem;
+          letter-spacing: 1%;
+        }
+  
+        span{
+          font-size: 1.2rem;
+          font-weight: 200;
+        }
+
+        gap: 2rem;
+
+        // Config to techs part
+        .techs-part, .abilities-part{
+          min-height: 5rem;
+          max-height: min-content;
+          justify-self: center;
+        }
+        .techs-part{ 
+          .elements{
+          gap: 1.25rem !important;
+            div{
+              img{
+                width: 2.5rem;
+                height: auto;
+              }
+            } // div end
+          } // .elements end
+        } // Techs part styles end
+  
+        // Config to abilities part
+        .abilities-part{      
+          .elements{ 
+            gap: 1.25rem !important;         
+            div{
+              img{
+                width: 3.5rem;
+                height: auto;
+              }
+            }
+          }
+        } // .abilities-part end
+      } // .techs-block-itens end
+    } // .techs-block end
+
+    .projects-block{
+    
+      .projects-block-items{
+  
+        h2{
+          font-size: 2.2rem;
+          letter-spacing: 1%;
+        }
+  
+        .swiper{
+          .swiper-button-prev{
+            left: 3rem;
+            top: unset;
+            bottom: 0 !important;
+          }
+          .swiper-wrapper{
+              .swiper-slide{
+                .projects{
+                  max-width: 95% !important;
+                  height: 32rem;
+                  background-color: $purple-medium;
+                  justify-items: center;
+                  grid-template-columns: 1fr 1fr;
+                  grid-template-rows: 12.5rem repeat(2, min-content) auto;
+                  grid-template-areas: 
+                  'image image'
+                  'text text'
+                  'techs techs'
+                  'buttons buttons';
+                  gap: .5rem 1rem !important;
+  
+                  img.rounded{
+                    width: 80%;
+                    height: 100%;
+                    filter: brightness(0.8);
+                  }
+  
+                  section{
+                    width: 100%;
+                    h4{
+                      font-size: 1.6rem;
+                      margin: .2rem;
+                    }
+                    p{
+                      font-size: 1rem ;
+                    }
+                  } // end section
+  
+                  .techs-used{
+                    max-width: 100%;
+                    div{
+                      gap: .5rem !important;
+                      font-size: 1rem;
+                      padding-right: 0;
+                      img{
+                        width: 2rem;
+                      }
+                    }
+                } // end techs-used
+  
+                .buttons-div{
+                  padding: 0;
+                  
+                  a.btn-primary{
+                    font-size: 1rem;
+                  }
+                }
+              } // end projects
+            }  // end swiper slider 
+          } // end swiper wrapper
+        } // .swiper end
+      } // .projects-block-items end
+    } // .projects-block end
+
+    .contact-block{
+
+      h2{
+        font-size: 2.2rem;
+        letter-spacing: 1%;
+      }
+
+      .contact-block-items{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+  
+        h3{
+          font-size: 1.6rem;
+        }
+
+        nav.d-flex{
+          justify-self: flex-start;
+          a{
+            text-decoration: underline
+          }
+  
+          .btn.btn-outline-primary{
+            font-size: 1rem;
+  
+          } // .btn.btn-outline-primary end
+  
+          .contact-texts{
+            font-size: 1rem;
+          }
+  
+          .contact-section-images{
+            width: 2.25rem;
+          }
+        } // nav end
+
+        .form{
+
+          .row{
+            position: relative;
+            div{
+              padding: 0;
+            }
+            .form-control{
+  
+              &:focus{
+                box-shadow: $bg-color;
+              }
+            }
+  
+            label{
+              font-size: 1.1rem;
+            }
+  
+            button[type="submit"]{
+              width: min-content;
+              background: $bg-dark;
+              border-color: $bg-dark;
+              @include font-styles($main-font, 1.3rem, $light-font);
+              font-weight: 500;
+  
+              transition: all .3s ease-in-out;
+              &:hover{
+                transform: scale(1.1);
+              }
+            }
+          } // .row end
+        } // .form end
+      } // .contact-block end      
+    } // .contact-block end
+  } // .main-block end
+
+  .footer{
+    p{
+      justify-self: center;
+      font-size: 1rem;
+      max-width: 75%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 475px){
+
+  .main-block{
+    
+    .start-block{
+      .start-block-itens{
+        .text-block{
+          #introduction-text{
+            font-size: 1.6rem;
+          } 
+  
+          #occupation-area{
+            font-size: 1.75rem;
+          }
+  
+          p{
+            font-size: 1rem;
+            margin-bottom: 0 !important;
+          }
+
+          .buttons-div{
+            gap: .8rem !important;
+            margin: .5rem auto !important;
+            .btn-primary,.btn-outline-primary{
+              font-size: 1rem;
+              padding: .5rem .8rem !important;
+            } // .btn-primary && .btn-outline-primary end
+          } // .buttons-div end
+        } // .text-block end
+        
+        .image-block{
+          height: 15rem;
+          
+          div{
+            width: 13rem;
+            height: 13rem;
+          }
+        } // .image-block end
+      } // .start-block-itens end
+    } // .start-block end
+
+    .techs-block{
+      background-color: $purple-medium;
+  
+      h2{
+        font-size: 1.6rem;
+        letter-spacing: 1%;
+      }
+  
+      .techs-block-itens{
+        grid-template-columns: 1fr;
+        h3{
+          font-size: 1.45rem;
+          letter-spacing: 1%;
+        }
+  
+        span{
+          font-size: 1rem;
+          font-weight: 200;
+        }
+
+        gap: 1.5rem;
+
+        // Config to techs part
+        .techs-part, .abilities-part{
+          min-height: 5rem;
+          max-height: min-content;
+          justify-self: center;
+        }
+        .techs-part{ 
+          .elements{
+          gap: 1.25rem !important;
+            div{
+              img{
+                width: 2.25rem;
+                height: auto;
+              }
+            } // div end
+          } // .elements end
+        } // Techs part styles end
+  
+        // Config to abilities part
+        .abilities-part{      
+          .elements{ 
+            gap: 1rem !important;         
+            div{
+              img{
+                width: 3rem;
+                height: auto;
+              }
+            }
+          }
+        } // .abilities-part end
+      } // .techs-block-itens end
+    } // .techs-block end
+
+    .projects-block{
+    
+      .projects-block-items{
+  
+        h2{
+          font-size: 2rem;
+        }
+  
+        .swiper{
+          
+          .swiper-wrapper{
+              .swiper-slide{
+                .projects{
+                  max-width: 95% !important;
+                  height: 35rem !important;
+                  background-color: $purple-medium;
+                  grid-template-columns: 1fr 1fr;
+                  grid-template-rows: 12.5rem repeat(2, min-content) auto;
+                  grid-template-areas: 
+                  'image image'
+                  'text text'
+                  'techs techs'
+                  'buttons buttons';
+                  gap: .5rem 1rem !important;
+  
+                  img.rounded{
+                    width: 95%;
+                    height: 100%;
+                    filter: brightness(0.8);
+                  }
+  
+                  section{
+                    width: 100%;
+                    h4{
+                      font-size: 1.4rem;
+                      margin: .2rem;
+                    }
+                    p{
+                      font-size: .9rem ;
+                      margin: .2rem;
+                    }
+                  } // end section
+  
+                  .techs-used{
+                    max-width: 100%;
+                    div{
+                      font-size: .9rem;
+                      padding-right: 0;
+                      img{
+                        width: 2rem;
+                      }
+                    }
+                } // end techs-used
+  
+                .buttons-div{
+                  padding: 0;
+                  gap: .5rem !important;
+                  a.btn-primary{
+                    font-size: .9rem;
+                  }
+                }
+              } // end projects
+            }  // end swiper slider 
+          } // end swiper wrapper
+        } // .swiper end
+      } // .projects-block-items end
+    } // .projects-block end
+  }
+}
+
+@media (max-width: 375px){
+
+  .header{
+    
+    #responsive-menu{
+      font-size: 2.5rem;
+    } 
+
+    .navbar{
+
+      .header-menu{
+        max-width: min-content;
+        margin: 0;
+        .navbar-brand{
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+
+        #main-navbar{
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          flex-basis: auto;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 0;
+          overflow: hidden;
+          visibility: hidden;
+          min-height: calc(100vh - 6rem);
+          background-color: #20202000;
+          z-index: 1010;
+
+          .navbar-nav{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            z-index: 1010;
+            background-color: $purple-medium;
+            min-height: calc(100vh - 6rem);
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+            transition: all .3s ease-in-out;
+
+            .nav-link{
+              position: relative;
+              font-size: 1.4rem;
+              font-weight: 300;
+
+              &::before{
+                content: "";
+                position: absolute;
+                bottom: .5rem;
+                left: 0;
+                width: 0;
+                height: .1rem;
+                transition: width .3s;
+              } // config to use with hover, like a underlined text
+
+              &:hover::before{ 
+                width: 80%;
+                background-color: $bg-color;
+              }
+
+              &.active::before{
+                width: 70%;
+                background-color: $bg-color;
+
+              }
+
+            } // end .nav-link
+          } //end .navbar-nav
+
+          &.actived{
+            width: 100%;
+            visibility: visible;
+            background-color: #2020208a;
+            transition: background-color .5s;
+
+            .navbar-nav{
+              width: 55%;
+            }
+          }
+        } // end .collapse
+      } // end .header-menu
+    } // .header end
+  }
+  .main-block{
+    
+    .start-block{
+      .start-block-itens{
+        .text-block{
+          #introduction-text{
+            font-size: 1.5rem;
+          } 
+  
+          #occupation-area{
+            font-size: 1.65rem;
+          }
+
+          .buttons-div{
+            gap: .5rem !important;
+            margin: .5rem auto 1rem auto !important;
+            max-width: 100%;
+            flex-wrap: wrap;
+            .btn-primary,.btn-outline-primary{
+              margin: 0 auto;
+              font-size: 1rem;
+              padding: .45rem .75rem !important;
+            } // .btn-primary && .btn-outline-primary end
+          } // .buttons-div end
+        } // .text-block end
+        
+        .image-block{
+          height: 14rem;
+          width: 100%;
+          padding: 0 !important;
+          div{
+            width: 9rem;
+            height: 9rem;
+          }
+        } // .image-block end
+      } // .start-block-itens end
+    } // .start-block end
+
+    .techs-block{
+      background-color: $purple-medium;
+  
+      h2{
+        font-size: 1.6rem;
+        letter-spacing: 1%;
+      }
+  
+      .techs-block-itens{
+        grid-template-columns: 1fr;
+        h3{
+          font-size: 1.45rem;
+          letter-spacing: 1%;
+        }
+  
+        span{
+          font-size: 1rem;
+          font-weight: 200;
+        }
+
+        gap: 1.5rem;
+
+        // Config to techs part
+        .techs-part, .abilities-part{
+          min-height: 5rem;
+          max-height: min-content;
+          justify-self: center;
+        }
+        .techs-part{ 
+          .elements{
+          gap: 1.25rem !important;
+            div{
+              img{
+                width: 2.25rem;
+                height: auto;
+              }
+            } // div end
+          } // .elements end
+        } // Techs part styles end
+  
+        // Config to abilities part
+        .abilities-part{      
+          .elements{ 
+            gap: 1rem !important;         
+            div{
+              img{
+                width: 3rem;
+                height: auto;
+              }
+            }
+          }
+        } // .abilities-part end
+      } // .techs-block-itens end
+    } // .techs-block end
+
+    .projects-block{
+    
+      .projects-block-items{
+  
+        h2{
+          font-size: 2rem;
+        }
+  
+        .swiper{
+          
+          .swiper-wrapper{
+              .swiper-slide{
+                .projects{
+                  max-width: 100% !important;
+                  height: 35rem !important;
+                  background-color: $purple-medium;
+                  grid-template-columns: 1fr 1fr;
+                  grid-template-rows: 12.5rem repeat(2, min-content) auto;
+                  grid-template-areas: 
+                  'image image'
+                  'text text'
+                  'techs techs'
+                  'buttons buttons';
+                  gap: .5rem 1rem !important;
+  
+                  img.rounded{
+                    width: 95%;
+                    height: 100%;
+                    filter: brightness(0.8);
+                  }
+  
+                  section{
+                    width: 100%;
+                    h4{
+                      font-size: 1.4rem;
+                      margin: .1rem;
+                    }
+                    p{
+                      font-size: .8rem ;
+                      margin: .1rem;
+                    }
+                  } // end section
+  
+                  .techs-used{
+                    max-width: 100%;
+                    div{
+                      font-size: .8rem;
+                      padding-right: 0;
+                      img{
+                        width: 1.8rem;
+                      }
+                    }
+                } // end techs-used
+  
+                .buttons-div{
+                  padding: 0;
+                  gap: .5rem !important;
+                  flex-wrap: wrap;
+                  width: 100%;
+                  a.btn-primary{
+                    font-size: .9rem;
+                    margin: 0 auto;
+                  }
+                }
+              } // end projects
+            }  // end swiper slider 
+          } // end swiper wrapper
+        } // .swiper end
+      } // .projects-block-items end
+    } // .projects-block end
+  }
+}

@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Desenvolvedor front-end | João Vitor Gonçalves da Costa">
+  <meta name="description" content="João Vitor Gonçalves da Costa | Desenvolvedor front-end">
+
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Desenvolvedor, front-end, programador, Desenvolvedor-web, web-developer, web, designer">
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -11,20 +19,429 @@
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+  <!-- AOS css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom css -->
   <link rel="stylesheet" href="src/style/styles.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="src/images/logo/minha logo.png" type="image/x-icon">
+
+  <!-- script -->
+  <script type="module" src="src/scripts/index.js" defer></script>
+
   <title>Gonçalves - Dev</title>
 </head>
 <body>
-    <header class="container-fluid">
-      <nav class="navbar ">
-        <h1 id="h1">fmklsmflas dsadada</h1>
-      </nav>
-    </header>
-    <div class="container">
-      
-    </div>
-    <footer>
+  <div class="alert alert-success hide" id="email-success" role="alert">
+    Email enviado com sucesso!
+  </div>
+  <div class="alert alert-danger hide" id="text-limit" role="alert">
+    Limite de caracteres atingido
+  </div>
 
+  <header class="header container-fluid d-flex justify-content-center">
+    <nav class="navbar py-3 d-flex justify-content-between align-items-center" >
+      <div class="header-menu container d-flex align-items-center justify-content-between p-0">
+        <a class="navbar-brand p-0 m-0" href="">
+          <img class="img-fluid p-0" src="src/images/logo/minha logo.png" alt="minha-logo">
+        </a>
+
+        <nav id="main-navbar" class="collapse navbar-collapse menu-desktop" tabindex="0"> <!-- Navbar menu -->
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#start-block">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#techs-block">Tecnologias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects-block">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-block">Contato</a>
+            </li>
+          </ul>
+        </nav> <!-- nav links end -->
+      </div>
+      <button id="responsive-menu" ><i class="bi bi-list"></i></button>
+    </nav>
+    <!-- Menu button for mobile -->
+    <!-- Menu mobile -->
+  </header> <!-- header end -->
+
+    <div class="container-fluid main-block p-0 mb-0" data-bs-spy="scroll" data-bs-target="#main-navbar">
+      <!-- Start block -->
+      <div id="start-block" class="start-block d-flex align-items-center justify-content-center">
+        <div class="container d-grid start-block-itens px-3">
+          <article class="text-block d-flex flex-column gap-1">
+            <h2 id="introduction-text" class="text-body m-0">Olá, sou o João Vitor</h2>
+            <h1 id="occupation-area" class="text-body m-0">Desenvolvedor Front-end</h1>
+            <p class="text-body m-0 mb-3">Contate-me já para trabalharmos juntos e ter seu site com o melhor visual</p>
+            <nav class="buttons-div d-flex gap-4 mx-auto my-3">
+              <a href="#contact-block" id="contact-me-button" class="btn btn-primary px-4 py-2">Contate-me</a>
+              <a href="src/images/curriculo/CV.pdf" target="_blank" class="btn btn-outline-primary px-4 py-2">Ver currículo</a>
+            </nav>
+          </article>
+          <div class="image-block d-flex justify-content-center align-items-center px-5">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="src/images/start-block/laptop.png" alt="laptop-image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-25 mx-auto text-center mb-4">
+        <a href="#techs-block" id="down-arrow"><img src="src/images/start-block/Vector 1.svg" alt="down-arrow"></a>
+      </div>
+      <!-- My techs block -->
+
+      <div id="techs-block" class="techs-block d-flex flex-column  align-items-center" >
+        <h2 class="pt-3">Tecnologias e habilidades</h2>
+        <div class="container d-grid techs-block-itens px-3 py-4">
+            <section class="techs-part p-3"  >
+              <h3 class="mb-4">Tecnologias</h3>
+              <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/js.svg" alt="JavaScript icon">
+                  <span>
+                    JavaScript
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/bootstrap.svg" alt="bootstrap icon">
+                  <span>
+                    Bootstrap
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/css.svg" alt="css icon">
+                  <span>
+                    CSS
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/html.svg" alt=" html icon">
+                  <span>
+                    HTML
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/sass.svg" alt="sass icon">
+                  <span>
+                    SASS
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/figma.svg" alt="figma icon">
+                  <span>
+                    Figma
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/git.svg" alt="git icon">
+                  <span>
+                    Git
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/babel.svg" alt="babel icon">
+                  <span>
+                    Babel
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/techs-images/webpack.svg" alt="webpack icon">
+                  <span>
+                    Webpack
+                  </span>
+                </div>
+              </div>
+            </section>
+            <section class="abilities-part p-3"  >
+              <h3 class="mb-4">Habilidades</h3>
+              <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap rounded">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/abilities-images/scrum.png" alt="srum icon">
+                  <span>
+                    Scrum (metodologia ágil)
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="src/images/abilities-images/ingles.png" alt="srum icon">
+                  <span>
+                    Inglês
+                  </span>
+                </div>
+              </div>
+            </section>
+        </div>
+      </div>
+
+      <!-- My projects block -->
+
+      <div id="projects-block" class="projects-block d-flex align-items-center" >
+        <section class="container projects-block-items d-flex gap-3 flex-column align-items-center px-3 py-4">
+          <h2>Projetos</h2>
+          
+          <div id="carouselExampleIndicators" class="swiper">
+            <div class="swiper-wrapper d-flexgap-5">
+              <!-- Class swiper-slide is just for the api swiperjs work correctly and inside hava a div with class project to personalize styles -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="src/images/projects-section/live4motors.png" alt="live4motors-image">
+                  <section>
+                    <h4>
+                      Live 4 motors
+                    </h4>
+                    <p>
+                      Site sobre veículos com 5 categorias, sendo elas de carros, motos, camionetes, supercarros e suvs
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div>
+                        <img src="src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <span>HTML</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/css.svg" alt="js-icon">
+                        <span>CSS</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://live4motors.netlify.app/" class="btn btn-primary">Ver projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/site-de-veiculos" class="btn btn-primary">Ver repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Live for motors project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="src/images/projects-section/country-game.png" alt="country-game-image">
+                  <section>
+                    <h4>
+                      Guess flags
+                    </h4>
+                    <p>
+                      Site para se divertir e aprender sobre geografia, disponinível em inglês e português
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div>
+                        <img src="src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <span>HTML</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/css.svg" alt="js-icon">
+                        <span>CSS</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/rest-countries-api.png" class="p-1" alt="js-icon">
+                        <span>Rest API</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://guessflags.netlify.app/" class="btn btn-primary">Ver projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/country-game" class="btn btn-primary">Ver repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Guess flags project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="src/images/projects-section/lol-info.png" alt="lol-ifno-image">
+                  <section>
+                    <h4>
+                      Lol Info
+                    </h4>
+                    <p>
+                      Site com os campeões do league of leagens, com todos os campeões e tabmbém informações e dicas sobre eles
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div>
+                        <img src="src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <span>HTML</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/sass.svg" alt="js-icon">
+                        <span>SASS</span>
+                      </div>
+                      <div>
+                        <img class="p-1" src="https://s3-us-west-1.amazonaws.com/riot-developer-portal/img/riot-logo.png" alt="js-icon">
+                        <span>Riot API</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://lol-champs-info.netlify.app/" class="btn btn-primary">Ver projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/Lol-champs" class="btn btn-primary">Ver repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Lol info project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="src/images/projects-section/STC.png" alt="live4motors-image">
+                  <section>
+                    <h4>
+                      STC
+                    </h4>
+                    <p>
+                      Site com 3 funcionalidades, relógio, timer e cronômetro
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div>
+                        <img src="src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <span>HTML</span>
+                      </div>
+                      <div>
+                        <img src="src/images/techs-images/css.svg" alt="js-icon">
+                        <span>CSS</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://manage-your-time.netlify.app/" class="btn btn-primary">Ver projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/relogio-config" class="btn btn-primary">Ver repositório</a>
+                  </div>
+                </div>
+              </div>  <!-- STC project div end -->
+            </div> <!-- slider wraper end -->
+            <div class="swiper-pagination" id="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div> <!-- swiper end -->
+        </section>
+      </div> <!-- project block end -->
+
+      <div  id="contact-block" class="contact-block d-flex flex-column align-items-center pb-4"> 
+        <h2 class="pt-2 mb-4">Contato</h2>
+        <div class="container d-grid text-center contact-block-items px-3" >
+          
+          <nav class="d-flex justify-content-start w-100">
+            <ul class="navbar-nav  d-flex flex-column gap-3 p-0">
+              <li class="d-flex nav-item gap-2 align-items-center">
+                <img class="contact-section-images" src="src/images/contact-section/whats.svg" alt="whats-image">
+                <a class="nav-link contact-texts" target="_blank" href="https://api.whatsapp.com/send?phone=5545999218780">
+                  +55 (45) 999218780
+                </a>
+              </li>
+              <li class="d-flex nav-item gap-2 align-items-center">
+                <img class="contact-section-images" src="src/images/contact-section/phone.png" alt="phone-image">
+                <p class="m-0 contact-texts">
+                  +55 (45) 999218780
+                </p>
+                <button class="btn btn-outline-primary ms-2">
+                  Copiar
+                </button>
+              </li>
+              <li class="d-flex nav-item gap-2 align-items-center">
+                <img class="contact-section-images" src="src/images/contact-section/curriculum.png" alt="curriculum">
+                <a class="nav-link contact-texts" target="_blank" href="src/images/curriculo/CV.pdf">
+                  Ver currículo
+                </a>
+              </li>
+              <li class="d-flex nav-item gap-2 align-items-center">
+                <img class="contact-section-images" src="src/images/contact-section/linkedin.svg" alt="linkedin-image">
+                <a target="_blank" href="https://www.linkedin.com/in/joaovitorgon%C3%A7alvesdacosta/" class="nav-link contact-texts">
+                  Acessar Linkedin
+                </a>
+              </li>
+              <li class="d-flex nav-item gap-2 align-items-center">
+                <img class="contact-section-images" src="src/images/contact-section/github.svg" alt="github-image">
+                <a target="_blank" href="https://github.com/Jvcgoncalves" class="nav-link contact-texts">
+                  Acessar GitHub
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-flex justify-content-end w-100">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="form w-100 p-1 text-start">
+              <h3 class="mb-3">Me envie um email</h3>
+              <div class="row w-100 mb-2 text-start">
+                <input type="hidden" name="accessKey" value="e8b656fd-a698-4419-a204-a793cdfeb181">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#contact-block">
+                <div class="col-md mb-3">
+                  <label for="name" class="form-label">Nome</label>
+                  <input required autocomplete="off" type="text" class="form-control" id="name" placeholder="Seu nome">
+                </div>
+                <div class="col-md mb-3">
+                  <label for="subject" class="form-label">Assunto</label>
+                  <input required autocomplete="off" type="text" class="form-control" id="subject" placeholder="O assunto">
+                </div>
+              </div>
+              <div class="row w-100 mb-2 text-start">
+                <div class="col-12 mb-3">
+                  <label for="email" class="form-label mb-1">Email</label>
+                  <input required autocomplete="off" type="email" class="form-control" id="email" placeholder="seu email">
+                </div>
+              </div>
+              <div class="row w-100 mb-2">
+                <div class="col-12 mb-3 text-start">
+                  <label class="form-label" for="email-message">Mensagem</label>
+                  <textarea required autocomplete="off" class="form-control pb-4" id="email-message" placeholder="Sua mensagem" name="message" maxlength="2000" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row w-100 mb-2">
+                <button type="submit" value="submit" class="btn btn-primary mb-3 mx-auto">Enviar</button>
+              </div>
+            </form> <!-- form end -->
+          </div> <!-- div.col-6 end -->
+        </div> <!-- .contact-block-items end-->
+      </div> 
+      <!-- .contact-block end-->
+
+    </div>
+
+    <footer class="footer d-flex text-center">
+        <p class="m-auto">© João Vitor Gonçalves da Costa | todos os direitos reservados</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+
+    <!-- Script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>

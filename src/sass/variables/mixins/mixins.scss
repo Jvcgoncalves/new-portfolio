@@ -4,3 +4,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@mixin font-styles($font-family,$font-size,$font-color){
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $font-color;
+}

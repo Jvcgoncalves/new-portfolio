@@ -1,3 +1,441 @@
-#h1{
-  @include font-gradient()
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $bg-color;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+// scrollbar styles
+
+::-webkit-scrollbar{
+  background-color: $bg-dark;
+  width: .8rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg,#6800B8 0%, #A869FE 100%);
+}
+
+// hidden class
+.hide{
+  display: none !important;
+}
+
+// email success style
+
+#email-success,#text-limit{
+  position: fixed;
+  z-index: 1010;
+  left: 50%;
+  top:2%;
+  background-color: #b9ff7f;
+  transform: translateX(-50%);
+  @include font-styles($second-font, 1.2rem, $dark-font);
+  font-weight: 400;
+}
+
+#text-limit{
+  background-color: #c50000;
+}
+
+.header{
+  width: 100%;
+  background-color: $purple-medium;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  #responsive-menu{
+    display: none;
+  }
+
+  .navbar{
+    width: 90%;
+
+    .header-menu{
+      max-width: 100%;
+      .navbar-brand{
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .collapse{
+        display: flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+
+        .navbar-nav{
+          flex-direction: row;
+          gap: 3rem;
+
+          .nav-link{
+            position: relative;
+            @include font-styles($second-font, 1.4rem, $light-font);
+
+            &::before{
+              content: "";
+              position: absolute;
+              bottom: .5rem;
+              left: 0;
+              width: 0;
+              height: .1rem;
+              transition: width .3s;
+            } // config to use with hover, like a underlined text
+
+            &:hover::before{ 
+              width: 80%;
+              background-color: $bg-color;
+            }
+
+            &.active::before{
+              width: 100%;
+              background-color: $bg-color;
+            }
+
+          } // end .nav-link
+        } //end .navbar-nav
+      } // end .collapse
+    } // end .header-menu
+  } // end .navbar
+} // end .header
+
+.main-block{
+
+  width: 100%;
+  margin-top: 6rem;
+
+  #down-arrow > img{
+    width: 3rem;
+    animation: arrowUpAndDown 1.5s infinite;
+  }
+
+  .container{
+   max-width: 90%; 
+  }
+
+  .start-block{ // start block styles
+    height: 30rem;
+    .start-block-itens{
+      grid-template-columns: 2fr 1fr;
+
+      .text-block{
+        max-width: 90%;
+        #introduction-text{
+          @include font-styles($second-font, 2.5rem, $dark-font);
+          font-weight: 400;
+        } 
+
+        #occupation-area{
+          @include font-styles($second-font, 3rem, $dark-font);
+          @include font-gradient();
+          font-weight: 600;
+        }
+
+        p{
+          @include font-styles($second-font,1.5rem,$dark-font);
+          font-weight: 200;
+        }
+
+        .buttons-div{
+          width: max-content;
+
+          .btn-primary{
+            background-color: $light-purple;
+            border: .1rem solid $light-purple;
+            @include font-styles($second-font,1.4rem,$light-font);
+            font-weight: 500;
+            transition: transform .3s ease-in-out;
+
+            &:hover{
+              transform: scale(1.1);
+            }
+          } // .btn-primary end
+
+          .btn-outline-primary{
+            border: .15rem solid $light-purple;
+            @include font-styles($second-font,1.4rem,$dark-font);
+            font-weight: 500;
+            transition: transform .3s ease-in-out;
+
+            &:hover{
+              background-color: $light-purple;
+              color: $light-font;
+              transform: scale(1.1);
+            }
+          } // .btn-outline-primary end
+        } // .buttons-div end
+      } // .text-block end
+      
+      .image-block{
+        width: 100%;
+        height: 20rem;
+        
+        div{
+          width: 20rem;
+          height: 20rem;
+          background-color: $light-purple;
+          border-radius: 100%;
+          img{
+            width: 90%;
+            height: 90%;
+            animation: upAndDown 3s infinite normal;
+          }
+        }
+      } // .image-block end
+    } // .start-block-items end
+  } // .start-block end
+  
+  .techs-block{
+    background-color: $purple-medium;
+
+    h2{
+      @include font-styles($main-font,2.2rem,$light-font);
+    }
+
+    .techs-block-itens{
+      grid-template-columns: 1fr 1fr;
+
+      h3{
+        @include font-styles($main-font,1.8rem,$light-font);
+      }
+
+      span{
+        @include font-styles($second-font,1.4rem,$light-font);
+        font-weight: 200;
+      }
+
+      // Config to techs part
+      .techs-part{ 
+        height: 30rem;
+        justify-self: flex-start;
+        width: 95%;
+        box-shadow: 0px 0px 10px 3px #151515 inset;
+        transition: .5s;
+        
+        .elements{
+          div{
+            img{
+              width: 3rem;
+              height: auto;
+            } 
+          } // div end
+        } // .elements end
+      } // Techs part styles end
+
+      // Config to abilities part
+      .abilities-part{
+        height: 30rem;
+        width: 95%;
+        justify-self: flex-end;
+        align-self: flex-start;
+        box-shadow: 0px 0px 10px 3px $bg-dark inset;
+        transition: .5s;   
+        
+        .elements{
+        
+          div{
+            img{
+              width: 4rem;
+              height: auto;
+            }
+          }
+        } // .elements end
+      } // .abilities-part end
+    } // .techs-block-itens end
+  }
+  
+  .projects-block{
+    
+    .projects-block-items{
+
+      h2{
+        @include font-styles($main-font,2.4rem,$dark-font);
+      }
+
+      .swiper{
+        width: 100% !important; 
+        overflow-x: hidden;
+        height: 100%;
+        
+        .swiper-wrapper{
+          width: 100%;
+
+            .swiper-slide{
+              width: 100%;
+              height: 100%;
+
+              .projects{
+                max-width: 100% !important;
+                height: 34rem !important;
+                background-color: $purple-medium;
+                grid-template-columns: 1.5fr 1fr;
+                grid-template-rows: 17rem auto auto;
+                grid-template-areas: 
+                'image techs'
+                'text text'
+                'buttons buttons';
+
+                img.rounded{
+                  grid-area: image;
+                  object-fit: fill;
+                  width: 100%;
+                  height: 100%;
+                  filter: brightness(0.8);
+                }
+
+                section{
+                  grid-area: text;
+                  h4{
+                    @include font-styles($main-font,2.2rem,$light-font);
+                    letter-spacing: .1%;
+                    margin-bottom: .1rem;
+                  }
+                  p{
+                    @include font-styles($second-font,1.3rem,$light-font);
+                    font-weight:200;
+                    margin-bottom: 0;
+                  }
+                } // end section
+
+                .techs-used{
+                  grid-area: techs;
+
+                div{
+                  @include font-styles($second-font,1rem,$light-font);
+                  font-weight:200;
+                  img{
+                    width: 2.2rem;
+                  }
+                }
+              } // end techs-used
+
+              .buttons-div{
+                width: max-content;
+                grid-area: buttons;
+                padding-bottom: 1rem;
+
+                a.btn-primary{
+                  align-self: flex-end;
+                  background: $bg-dark;
+                  border-color: $bg-dark;
+                  @include font-styles($second-font,1.2rem,$light-font);
+                  transition: all .3s ease-in-out;
+                  &:hover{
+                    transform: scale(1.1);
+                  }
+                }
+              }
+            } // end projects
+          }  // end swiper slider 
+        } // end swiper wrapper
+
+        #swiper-pagination{
+          position: unset;
+          .swiper-pagination-bullet{
+            margin-top: 1rem;
+            width: .8rem;
+            height: .8rem;
+          }
+          .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            background-color: $purple-medium;
+          }
+        }
+      } // .swiper end
+    } // .projects-block-items end
+  } // .projects-block end
+
+  .contact-block{
+    background-color: $purple-medium;
+    height: max-content;
+    h2{
+      @include font-styles($main-font,2rem,$light-font);
+    }
+    .contact-block-items{
+      grid-template-columns: repeat(2,1fr);
+
+      h3{
+        @include font-styles($main-font,1.6rem,$light-font);
+      }
+
+      nav.d-flex{
+        justify-self: flex-start;
+        a{
+          text-decoration: underline
+        }
+
+        .btn.btn-outline-primary{
+          @include font-styles($second-font, 1.1rem, $light-font);
+          font-weight: 900;
+          border-color: $bg-dark; 
+          border-width: .2rem;
+
+          &:hover{
+            background-color: $bg-color;
+            color: $dark-font;
+            border-color: $bg-color; 
+          }
+        } // .btn.btn-outline-primary end
+
+        .contact-texts{
+          @include font-styles($second-font, 1.2rem, $light-font);
+          font-weight: 200;
+        }
+
+        .contact-section-images{
+          width: 2.5rem;
+        }
+      } // nav end
+       
+          .form{
+          position: relative;
+          right: 0;
+          
+          .row{
+            position: relative;
+            .form-control{
+
+
+              &:focus{
+                box-shadow: $bg-color;
+              }
+            }
+
+            label{
+              @include font-styles($second-font, 1.2rem, $light-font);
+              font-weight: 200;
+            }
+
+            button[type="submit"]{
+              width: min-content;
+              background: $bg-dark;
+              border-color: $bg-dark;
+              @include font-styles($main-font, 1.3rem, $light-font);
+
+              transition: all .3s ease-in-out;
+              &:hover{
+                transform: scale(1.1);
+              }
+            }
+          } // .row end
+        } // .form end      
+    } // .contact-block end
+    
+  } // .contact-block end
+} // .main-block end
+
+.footer{
+  background-color: $bg-dark;
+  height: 4rem;
+  p{
+    @include font-styles($main-font, 1.3rem, $light-font)
+  }
 }
