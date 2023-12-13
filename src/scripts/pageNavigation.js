@@ -69,7 +69,6 @@ function goToTechBlock(ev){
 
 function goToContactBlock(ev){
     if(ev.type === 'touchstart') ev.preventDefault()
-    console.log('a')
     const techsBlock = document.getElementById('contact-block')
     let rect = techsBlock.getBoundingClientRect()
     let offset = rect.top - 100

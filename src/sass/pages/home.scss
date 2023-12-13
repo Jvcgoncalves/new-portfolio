@@ -381,6 +381,12 @@ body{
             color: $dark-font;
             border-color: $bg-color; 
           }
+          
+          &.copied{
+            border-color: #99ff46;
+            color: #b9ff7f;
+            background-color: $bg-dark
+          }
         } // .btn.btn-outline-primary end
 
         .contact-texts{
