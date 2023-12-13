@@ -1,8 +1,6 @@
 export async function addResponsiveMenuFunctions(){
   document.querySelector('#responsive-menu').addEventListener('click',showResponsiveMenu)
   document.querySelector('#responsive-menu').addEventListener('touchstart',showResponsiveMenu)
-  console.log(document.querySelector('#main-navbar'))
-
 }
 
 export function showResponsiveMenu(ev){
