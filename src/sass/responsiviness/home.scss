@@ -269,7 +269,7 @@
 
         #main-navbar{
           position: fixed;
-          bottom: 0;
+          top: 6rem;
           left: 0;
           display: flex;
           flex-basis: auto;
@@ -278,18 +278,18 @@
           width: 0;
           overflow: hidden;
           visibility: hidden;
-          min-height: calc(100vh - 6rem);
+          height: calc(100vh - 6rem);
           background-color: #20202000;
           z-index: 1010;
 
           .navbar-nav{
             position: fixed;
             right: 0;
-            bottom: 0;
+            top: 6rem;
             width: 0;
             z-index: 1010;
             background-color: $purple-medium;
-            min-height: calc(100vh - 6rem);
+            height: calc(100vh - 6rem);
             flex-direction: column;
             padding: 1rem;
             gap: 1rem;
@@ -1099,32 +1099,8 @@
         }
 
         #main-navbar{
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          display: flex;
-          flex-basis: auto;
-          align-items: flex-start;
-          justify-content: flex-start;
-          width: 0;
-          overflow: hidden;
-          visibility: hidden;
-          min-height: calc(100vh - 6rem);
-          background-color: #20202000;
-          z-index: 1010;
 
           .navbar-nav{
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            width: 0;
-            z-index: 1010;
-            background-color: $purple-medium;
-            min-height: calc(100vh - 6rem);
-            flex-direction: column;
-            padding: 1rem;
-            gap: 1rem;
-            transition: all .3s ease-in-out;
 
             .nav-link{
               position: relative;

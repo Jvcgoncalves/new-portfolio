@@ -613,7 +613,7 @@ body {
   }
   .header .navbar .header-menu #main-navbar {
     position: fixed;
-    bottom: 0;
+    top: 6rem;
     left: 0;
     display: flex;
     flex-basis: auto;
@@ -622,18 +622,18 @@ body {
     width: 0;
     overflow: hidden;
     visibility: hidden;
-    min-height: calc(100vh - 6rem);
+    height: calc(100vh - 6rem);
     background-color: rgba(32, 32, 32, 0);
     z-index: 1010;
   }
   .header .navbar .header-menu #main-navbar .navbar-nav {
     position: fixed;
     right: 0;
-    bottom: 0;
+    top: 6rem;
     width: 0;
     z-index: 1010;
     background-color: #5900A3;
-    min-height: calc(100vh - 6rem);
+    height: calc(100vh - 6rem);
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
@@ -1183,34 +1183,6 @@ body {
   .header .navbar .header-menu .navbar-brand {
     width: 2.5rem;
     height: 2.5rem;
-  }
-  .header .navbar .header-menu #main-navbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-basis: auto;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 0;
-    overflow: hidden;
-    visibility: hidden;
-    min-height: calc(100vh - 6rem);
-    background-color: rgba(32, 32, 32, 0);
-    z-index: 1010;
-  }
-  .header .navbar .header-menu #main-navbar .navbar-nav {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    z-index: 1010;
-    background-color: #5900A3;
-    min-height: calc(100vh - 6rem);
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    transition: all 0.3s ease-in-out;
   }
   .header .navbar .header-menu #main-navbar .navbar-nav .nav-link {
     position: relative;
