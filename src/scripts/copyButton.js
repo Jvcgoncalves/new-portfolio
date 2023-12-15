@@ -5,7 +5,7 @@ export async function addCopyNumberFunction(){
 
 function copyNumber(ev){
   if(ev.type === 'touchstart') ev.preventDefault()
-  navigator.clipboard.writeText(document.querySelector('#copy-number-button').innerText)
+  navigator.clipboard.writeText(document.querySelector('#my-phone-number').innerText)
   ev.currentTarget.innerText='Copiado!'
   ev.currentTarget.classList.add('copied')
   if(document.querySelector('button#copy-number-button')){
