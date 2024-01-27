@@ -100,7 +100,7 @@ body {
 .header .navbar .header-menu .collapse .navbar-nav .nav-link {
   position: relative;
   font-family: "Lexend", arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #F5F5F5;
 }
 .header .navbar .header-menu .collapse .navbar-nav .nav-link::before {
@@ -143,13 +143,13 @@ body {
 }
 .main-block .start-block .start-block-itens .text-block #introduction-text {
   font-family: "Lexend", arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #222222;
   font-weight: 400;
 }
 .main-block .start-block .start-block-itens .text-block #occupation-area {
   font-family: "Lexend", arial, sans-serif;
-  font-size: 3rem;
+  font-size: 2.65rem;
   color: #222222;
   background: linear-gradient(180deg, #6800B8 0%, #A869FE 100%);
   background-clip: text;
@@ -159,7 +159,7 @@ body {
 }
 .main-block .start-block .start-block-itens .text-block p {
   font-family: "Lexend", arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #222222;
   font-weight: 200;
 }
@@ -181,7 +181,7 @@ body {
 .main-block .start-block .start-block-itens .text-block .buttons-div .btn-outline-primary {
   border: 0.15rem solid #6601B3;
   font-family: "Lexend", arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #222222;
   font-weight: 500;
   transition: transform 0.3s ease-in-out;
