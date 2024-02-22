@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="João Vitor Gonçalves da Costa | Desenvolvedor front-end">
 
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Desenvolvedor, front-end, programador, Desenvolvedor-web, web-developer, web, designer">
-
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,7 +25,7 @@
   <link rel="stylesheet" href="src/style/styles.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="src/images/logo/minha logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="src/images/logo/minha_logo.png" type="image/x-icon">
 
   <!-- script -->
   <script type="module" src="src/scripts/index.js" defer></script>
@@ -45,22 +44,32 @@
     <nav class="navbar py-3 d-flex justify-content-between align-items-center" >
       <div class="header-menu container d-flex align-items-center justify-content-between p-0">
         <a class="navbar-brand p-0 m-0" href="">
-          <img class="img-fluid p-0" src="src/images/logo/minha logo.png" alt="minha-logo">
+          <img class="img-fluid p-0" src="src/images/logo/minha_logo.png" alt="minha-logo">
         </a>
 
         <nav id="main-navbar" class="collapse navbar-collapse menu-desktop" tabindex="0"> <!-- Navbar menu -->
-          <ul class="navbar-nav d-flex">
+          <ul class="navbar-nav d-flex flex-row gap-4 align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="#start-block">Início</a>
+              <a class="nav-link text-link" href="#start-block">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#techs-block">Tecnologias</a>
+              <a class="nav-link text-link" href="#techs-block">Tecnologias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects-block">Projetos</a>
+              <a class="nav-link text-link" href="#projects-block">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-block">Contato</a>
+              <a class="nav-link text-link" href="#contact-block">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="https://www.linkedin.com/in/joaovitorgon%C3%A7alvesdacosta/" class="nav-link image-link">
+                <img class="contact-images" src="src/images/contact-section/linkedin.svg" alt="linkedin-image">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="https://github.com/Jvcgoncalves" class="nav-link image-link">
+                <img class="contact-images" src="src/images/contact-section/github.svg" alt="github-image">
+              </a>
             </li>
           </ul>
         </nav> <!-- nav links end -->
@@ -99,65 +108,71 @@
       <div id="techs-block" class="techs-block d-flex flex-column  align-items-center" >
         <h2 class="pt-3">Tecnologias e habilidades</h2>
         <div class="container d-grid techs-block-itens px-3 py-4">
-            <section class="techs-part p-3"  >
-              <h3 class="mb-4">Tecnologias</h3>
-              <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap">
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/js.svg" alt="JavaScript icon">
-                  <span>
-                    JavaScript
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/bootstrap.svg" alt="bootstrap icon">
-                  <span>
-                    Bootstrap
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/css.svg" alt="css icon">
-                  <span>
-                    CSS
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/html.svg" alt=" html icon">
-                  <span>
-                    HTML
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/sass.svg" alt="sass icon">
-                  <span>
-                    SASS
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/figma.svg" alt="figma icon">
-                  <span>
-                    Figma
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/git.svg" alt="git icon">
-                  <span>
-                    Git
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/babel.svg" alt="babel icon">
-                  <span>
-                    Babel
-                  </span>
-                </div>
-                <div class="d-flex align-items-center gap-1">
-                  <img src="src/images/techs-images/webpack.svg" alt="webpack icon">
-                  <span>
-                    Webpack
-                  </span>
-                </div>
+          <section class="techs-part p-3"  >
+            <h3 class="mb-4">Tecnologias</h3>
+            <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap">
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/js.svg" alt="JavaScript icon">
+                <span>
+                  JavaScript
+                </span>
               </div>
-            </section>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/reactJS.svg" alt="ReactJS icon">
+                <span>
+                  RactJS
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap icon">
+                <span>
+                  Bootstrap
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/css.svg" alt="css icon">
+                <span>
+                  CSS
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/html.svg" alt=" html icon">
+                <span>
+                  HTML
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/sass.svg" alt="sass icon">
+                <span>
+                  SASS
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/figma.svg" alt="figma icon">
+                <span>
+                  Figma
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/git.svg" alt="git icon">
+                <span>
+                  Git
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/babel.svg" alt="babel icon">
+                <span>
+                  Babel
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/webpack.svg" alt="webpack icon">
+                <span>
+                  Webpack
+                </span>
+              </div>
+            </div>
+          </section>
             <section class="abilities-part p-3"  >
               <h3 class="mb-4">Habilidades</h3>
               <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap rounded">
@@ -183,10 +198,100 @@
       <div id="projects-block" class="projects-block d-flex align-items-center" >
         <section class="container projects-block-items d-flex gap-3 flex-column align-items-center px-3 py-4">
           <h2>Projetos</h2>
-          
           <div id="carouselExampleIndicators" class="swiper">
             <div class="swiper-wrapper d-flexgap-5">
               <!-- Class swiper-slide is just for the api swiperjs work correctly and inside hava a div with class project to personalize styles -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="./src/images/projects-section/stock-store.png" alt="pokeinfo-image">
+                  <section>
+                    <h4>
+                      Stock manager
+                    </h4>
+                    <p>
+                      Site de gerenciamento de estoque, com login e crud completo. (link para o repositório do back-end no readme do front-end)
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div>
+                        <img src="./src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/reactJS.svg" alt="reactjs-icon">
+                        <span>React</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/sass.svg" alt="sass-icon">
+                        <span>SASS</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/nodeJs.svg" alt="nodejs-icon">
+                        <span>Node JS</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap-icon">
+                        <span>Bootstrap</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/expressJs.svg" alt="expressJs-icon">
+                        <span>Express JS</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://stock-storejvgc.netlify.app/" class="btn btn-primary">Ver projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/stock-manager" class="btn btn-primary">Ver repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Stock manager project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="./src/images/projects-section/pokeinfo.png" alt="pokeinfo-image">
+                  <section>
+                    <h4>
+                      PokeInfo
+                    </h4>
+                    <p>
+                      Site de pokemons da 1° até a 3° geração, filtro por tipo e barra de pesquisa.
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div>
+                        <img src="./src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/reactJS.svg" alt="reactjs-icon">
+                        <span>React</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/sass.svg" alt="sass-icon">
+                        <span>SASS</span>
+                      </div>
+                      <div>
+                        <img src="./src/images/techs-images/pokeApi.png" alt="pokeapi-icon">
+                        <span>PokeAPI</span>
+                      </div><div>
+                        <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap-icon">
+                        <span>Bootstrap</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://pokes-info.netlify.app/" class="btn btn-primary">Ver projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/pokeInfo" class="btn btn-primary">Ver repositório</a>
+                  </div>
+                </div>
+              </div> <!-- PokeInfo project div end -->
               <div class="swiper-slide">
                 <div class="projects d-grid gap-3 rounded p-3 mx-auto">
                   <img class="rounded" src="src/images/projects-section/live4motors.png" alt="live4motors-image">
@@ -195,7 +300,7 @@
                       Live 4 motors
                     </h4>
                     <p>
-                      Site sobre veículos com 5 categorias, sendo elas de carros, motos, camionetes, supercarros e suvs
+                      Site sobre veículos com 5 categorias, sendo elas de carros, motos, camionetes, supercarros e suvs.
                     </p>
                   </section>
                   <section class="techs-used">
@@ -208,11 +313,11 @@
                         <span>JavaScript</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <img src="src/images/techs-images/html.svg" alt="html-icon">
                         <span>HTML</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/css.svg" alt="js-icon">
+                        <img src="src/images/techs-images/css.svg" alt="css-icon">
                         <span>CSS</span>
                       </div>
                     </div>
@@ -231,7 +336,7 @@
                       Guess flags
                     </h4>
                     <p>
-                      Site para se divertir e aprender sobre geografia, disponinível em inglês e português
+                      Site para se divertir e aprender sobre geografia, disponinível em inglês e português.
                     </p>
                   </section>
                   <section class="techs-used">
@@ -244,15 +349,15 @@
                         <span>JavaScript</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <img src="src/images/techs-images/html.svg" alt="html-icon">
                         <span>HTML</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/css.svg" alt="js-icon">
+                        <img src="src/images/techs-images/css.svg" alt="css-icon">
                         <span>CSS</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/rest-countries-api.png" class="p-1" alt="js-icon">
+                        <img src="src/images/techs-images/rest-countries-api.png" class="p-1" alt="restapi-icon">
                         <span>Rest API</span>
                       </div>
                     </div>
@@ -271,7 +376,7 @@
                       Lol Info
                     </h4>
                     <p>
-                      Site com os campeões do league of leagens, com todos os campeões e tabmbém informações e dicas sobre eles
+                      Site com os campeões do league of leagens, com todos os campeões e tabmbém informações e dicas sobre eles.
                     </p>
                   </section>
                   <section class="techs-used">
@@ -284,15 +389,15 @@
                         <span>JavaScript</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <img src="src/images/techs-images/html.svg" alt="HTML-icon">
                         <span>HTML</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/sass.svg" alt="js-icon">
+                        <img src="src/images/techs-images/sass.svg" alt="css-icon">
                         <span>SASS</span>
                       </div>
                       <div>
-                        <img class="p-1" src="https://s3-us-west-1.amazonaws.com/riot-developer-portal/img/riot-logo.png" alt="js-icon">
+                        <img class="p-1" src="https://s3-us-west-1.amazonaws.com/riot-developer-portal/img/riot-logo.png" alt="riot-api-icon">
                         <span>Riot API</span>
                       </div>
                     </div>
@@ -311,7 +416,7 @@
                       STC
                     </h4>
                     <p>
-                      Site com 3 funcionalidades, relógio, timer e cronômetro
+                      Site com 3 funcionalidades, relógio, timer e cronômetro.
                     </p>
                   </section>
                   <section class="techs-used">
@@ -324,11 +429,11 @@
                         <span>JavaScript</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/html.svg" alt="js-icon">
+                        <img src="src/images/techs-images/html.svg" alt="HTML-icon">
                         <span>HTML</span>
                       </div>
                       <div>
-                        <img src="src/images/techs-images/css.svg" alt="js-icon">
+                        <img src="src/images/techs-images/css.svg" alt="css-icon">
                         <span>CSS</span>
                       </div>
                     </div>
@@ -391,7 +496,7 @@
           <div class="d-flex justify-content-end w-100">
             <form action="https://api.staticforms.xyz/submit" method="post" class="form w-100 p-1 text-start">
               <h3 class="mb-3">Me envie um email</h3>
-              <div class="row w-100 mb-2 text-start">
+              <div class="row w-100 mb-2 text-start column-gap-3">
                 <input type="hidden" name="accessKey" value="e8b656fd-a698-4419-a204-a793cdfeb181">
                 <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#contact-block">
                 <div class="col-md mb-3">

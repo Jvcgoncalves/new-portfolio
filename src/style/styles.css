@@ -93,17 +93,25 @@ body {
   flex-basis: auto;
   justify-content: flex-end;
 }
-.header .navbar .header-menu .collapse .navbar-nav {
-  flex-direction: row;
-  gap: 3rem;
-}
 .header .navbar .header-menu .collapse .navbar-nav .nav-link {
   position: relative;
   font-family: "Lexend", arial, sans-serif;
   font-size: 1.2rem;
   color: #F5F5F5;
 }
-.header .navbar .header-menu .collapse .navbar-nav .nav-link::before {
+.header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.text-link) {
+  width: 2.5rem;
+  height: auto;
+  transition: 0.5s ease-out;
+}
+.header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.text-link) img {
+  width: 100%;
+  height: 100%;
+}
+.header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.text-link):hover {
+  transform: scale(1.1) rotate3d(0, 0, 1, 360deg);
+}
+.header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.image-link)::before {
   content: "";
   position: absolute;
   bottom: 0.5rem;
@@ -112,11 +120,11 @@ body {
   height: 0.1rem;
   transition: width 0.3s;
 }
-.header .navbar .header-menu .collapse .navbar-nav .nav-link:hover::before {
+.header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.image-link):hover::before {
   width: 80%;
   background-color: #F7F0FF;
 }
-.header .navbar .header-menu .collapse .navbar-nav .nav-link.active::before {
+.header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.image-link).active::before {
   width: 100%;
   background-color: #F7F0FF;
 }
@@ -270,9 +278,9 @@ body {
   max-width: 100% !important;
   height: 34rem !important;
   background-color: #5900A3;
-  grid-template-columns: 1.25fr 1fr;
-  grid-template-rows: 17rem auto auto;
-  grid-template-areas: "image techs" "text text" "buttons buttons";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15rem auto auto;
+  grid-template-areas: "image text" "techs techs" "buttons buttons";
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects img.rounded {
   grid-area: image;
@@ -432,15 +440,27 @@ body {
     height: 8rem;
   }
   .header .navbar .header-menu .navbar-brand {
-    width: 4.75rem;
-    height: 4.75rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .header .navbar .header-menu .collapse .navbar-nav {
     flex-direction: row;
     gap: 3rem;
   }
   .header .navbar .header-menu .collapse .navbar-nav .nav-link {
-    font-size: 2.2rem;
+    font-size: 1.75rem;
+  }
+  .header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.text-link) {
+    width: 3.5rem;
+    height: auto;
+    transition: 0.5s ease-out;
+  }
+  .header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.text-link) img {
+    width: 100%;
+    height: 100%;
+  }
+  .header .navbar .header-menu .collapse .navbar-nav .nav-link:not(.text-link):hover {
+    transform: scale(1.1) rotate3d(0, 0, 1, 360deg);
   }
   .header .navbar .header-menu .collapse .navbar-nav .nav-link::before {
     height: 0.25rem;
@@ -463,19 +483,19 @@ body {
     max-width: 95%;
   }
   .main-block .start-block .start-block-itens .text-block #introduction-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .main-block .start-block .start-block-itens .text-block #occupation-area {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
   }
   .main-block .start-block .start-block-itens .text-block p {
     font-size: 2rem;
   }
   .main-block .start-block .start-block-itens .text-block .buttons-div .btn-primary {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .main-block .start-block .start-block-itens .text-block .buttons-div .btn-outline-primary {
-    font-size: 2rem;
+    font-size: 1.75rem;
     border-width: 0.3rem;
   }
   .main-block .start-block .start-block-itens .image-block {
@@ -494,10 +514,10 @@ body {
     gap: 3rem;
   }
   .main-block .techs-block .techs-block-itens h3 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .main-block .techs-block .techs-block-itens span {
-    font-size: 1.9rem;
+    font-size: 1.75rem;
   }
   .main-block .techs-block .techs-block-itens .techs-part {
     height: 34rem;
@@ -517,30 +537,30 @@ body {
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
     height: 40rem !important;
-    grid-template-rows: 21rem auto auto;
+    grid-template-rows: 20rem auto auto;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0.3rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used {
     grid-area: techs;
     gap: 3rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
-    width: 3.75rem;
+    width: 3.5rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div {
     padding-bottom: 1rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
-    font-size: 1.9rem;
+    font-size: 1.65rem;
     padding: 0.5rem 1.5rem;
   }
   .main-block .projects-block .projects-block-items .swiper #swiper-pagination {
@@ -556,14 +576,14 @@ body {
     margin-top: 1.5rem;
   }
   .main-block .contact-block .contact-block-items h3 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .main-block .contact-block .contact-block-items nav.d-flex .btn.btn-outline-primary {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border-width: 0.3rem;
   }
   .main-block .contact-block .contact-block-items nav.d-flex .contact-texts {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .main-block .contact-block .contact-block-items nav.d-flex .contact-section-images {
     width: 2.5rem;
@@ -576,23 +596,23 @@ body {
     position: relative;
   }
   .main-block .contact-block .contact-block-items .form .row .form-control {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .main-block .contact-block .contact-block-items .form .row .form-control:focus {
     box-shadow: #F7F0FF;
   }
   .main-block .contact-block .contact-block-items .form .row label {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .main-block .contact-block .contact-block-items .form .row button[type=submit] {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
   .footer {
     background-color: #202020;
-    height: 7rem;
+    height: 6rem;
   }
   .footer p {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 @media (max-width: 1023px) {
@@ -606,10 +626,6 @@ body {
   .header .navbar .header-menu {
     max-width: min-content;
     margin: 0;
-  }
-  .header .navbar .header-menu .navbar-brand {
-    width: 3rem;
-    height: 3rem;
   }
   .header .navbar .header-menu #main-navbar {
     position: fixed;
@@ -636,8 +652,9 @@ body {
     height: calc(100vh - 6rem);
     flex-direction: column;
     padding: 1rem;
-    gap: 1rem;
+    gap: 0.5rem !important;
     transition: all 0.3s ease-in-out;
+    flex-direction: column !important;
   }
   .header .navbar .header-menu #main-navbar .navbar-nav .nav-link {
     position: relative;
@@ -742,11 +759,8 @@ body {
     font-size: 2rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
-    max-width: 100% !important;
     height: 30rem !important;
-    background-color: #5900A3;
-    grid-template-columns: 1.25fr 1fr;
-    grid-template-rows: 16rem min-content auto;
+    grid-template-rows: 12rem auto auto;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
     font-size: 1.8rem;
@@ -781,6 +795,13 @@ body {
   .main-block .contact-block .contact-block-items {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .main-block .contact-block .contact-block-items .form .row {
+    margin: 0;
+  }
+  .main-block .contact-block .contact-block-items .form .row > * {
+    padding-left: 0;
+    padding-right: 0;
   }
   .main-block .contact-block .contact-block-items h3 {
     font-size: 1.4rem;
@@ -849,18 +870,17 @@ body {
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
     max-width: 91.5% !important;
     height: 32rem !important;
-    background-color: #5900A3;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 16rem auto auto;
+    grid-template-rows: 13rem auto auto;
     gap: 0.5rem 1rem !important;
   }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects img.rounded {
-    width: 100%;
-    height: 100%;
-    filter: brightness(0.8);
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section p {
+    font-size: 1rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used {
     max-width: 100%;
+  }
+  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
+    font-size: 1rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
     width: 2.2rem;
@@ -870,7 +890,7 @@ body {
     grid-area: buttons;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .main-block .projects-block .projects-block-items .swiper #swiper-pagination {
     position: unset;
@@ -934,11 +954,6 @@ body {
     font-size: 1.2rem;
     font-weight: 200;
   }
-  .main-block .techs-block .techs-block-itens .techs-part, .main-block .techs-block .techs-block-itens .abilities-part {
-    min-height: 5rem;
-    max-height: min-content;
-    justify-self: center;
-  }
   .main-block .techs-block .techs-block-itens .techs-part .elements {
     gap: 1.25rem !important;
   }
@@ -964,35 +979,24 @@ body {
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
     max-width: 95% !important;
-    height: 32rem;
-    background-color: #5900A3;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12.5rem repeat(2, min-content) auto;
+    grid-template-rows: 12rem repeat(3, 1fr);
     grid-template-areas: "image image" "text text" "techs techs" "buttons buttons";
     gap: 0.5rem 1rem !important;
-  }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects img.rounded {
-    width: 80%;
-    height: 100%;
-    filter: brightness(0.8);
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section {
     width: 100%;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0.2rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section p {
-    font-size: 1rem;
-  }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used {
-    max-width: 100%;
+    font-size: 0.9rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
     gap: 0.5rem !important;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-right: 0;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
@@ -1002,7 +1006,7 @@ body {
     padding: 0;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .main-block .contact-block h2 {
     font-size: 2.2rem;
@@ -1107,11 +1111,6 @@ body {
     font-size: 1rem;
     font-weight: 200;
   }
-  .main-block .techs-block .techs-block-itens .techs-part, .main-block .techs-block .techs-block-itens .abilities-part {
-    min-height: 5rem;
-    max-height: min-content;
-    justify-self: center;
-  }
   .main-block .techs-block .techs-block-itens .techs-part .elements {
     gap: 1.25rem !important;
   }
@@ -1126,25 +1125,14 @@ body {
     width: 3rem;
     height: auto;
   }
-  .main-block .projects-block .projects-block-items h2 {
-    font-size: 2rem;
-  }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
-    max-width: 95% !important;
-    height: 35rem !important;
-    background-color: #5900A3;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12.5rem repeat(2, min-content) auto;
-    grid-template-areas: "image image" "text text" "techs techs" "buttons buttons";
-    gap: 0.5rem 1rem !important;
+    height: 34rem !important;
+    grid-template-rows: 10rem repeat(3, 1fr);
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects img.rounded {
     width: 95%;
     height: 100%;
     filter: brightness(0.8);
-  }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section {
-    width: 100%;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
     font-size: 1.4rem;
@@ -1153,9 +1141,6 @@ body {
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section p {
     font-size: 0.9rem;
     margin: 0.2rem;
-  }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used {
-    max-width: 100%;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
     font-size: 0.9rem;
@@ -1175,10 +1160,6 @@ body {
 @media (max-width: 375px) {
   .header #responsive-menu {
     font-size: 2.5rem;
-  }
-  .header .navbar .header-menu {
-    max-width: min-content;
-    margin: 0;
   }
   .header .navbar .header-menu .navbar-brand {
     width: 2.5rem;
@@ -1260,11 +1241,6 @@ body {
     font-size: 1rem;
     font-weight: 200;
   }
-  .main-block .techs-block .techs-block-itens .techs-part, .main-block .techs-block .techs-block-itens .abilities-part {
-    min-height: 5rem;
-    max-height: min-content;
-    justify-self: center;
-  }
   .main-block .techs-block .techs-block-itens .techs-part .elements {
     gap: 1.25rem !important;
   }
@@ -1279,52 +1255,34 @@ body {
     width: 3rem;
     height: auto;
   }
-  .main-block .projects-block .projects-block-items h2 {
-    font-size: 2rem;
-  }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects {
     max-width: 100% !important;
     height: 35rem !important;
     background-color: #5900A3;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12.5rem repeat(2, min-content) auto;
-    grid-template-areas: "image image" "text text" "techs techs" "buttons buttons";
+    grid-template-rows: 8rem repeat(3, 1fr);
     gap: 0.5rem 1rem !important;
   }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects img.rounded {
-    width: 95%;
-    height: 100%;
-    filter: brightness(0.8);
-  }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section {
-    width: 100%;
-  }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0.1rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects section p {
     font-size: 0.8rem;
     margin: 0.1rem;
   }
-  .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used {
-    max-width: 100%;
-  }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div {
     font-size: 0.8rem;
     padding-right: 0;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
-    width: 1.8rem;
+    width: 1.7rem;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div {
     padding: 0;
-    gap: 0.5rem !important;
     flex-wrap: wrap;
     width: 100%;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
-    font-size: 0.9rem;
     margin: 0 auto;
   }
   .main-block .contact-block .contact-block-items nav.d-flex .nav-item {

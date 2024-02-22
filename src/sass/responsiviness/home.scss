@@ -4,8 +4,8 @@
     .navbar{
       .header-menu{
         .navbar-brand{
-          width: 4.75rem;
-          height: 4.75rem;
+          width: 4.5rem;
+          height: 4.5rem;
         }
   
         .collapse{
@@ -15,8 +15,22 @@
             gap: 3rem;
   
             .nav-link{
-              font-size: 2.2rem;
+              font-size: 1.75rem;
+
+              &:not(.text-link){
+                width: 3.5rem;
+                height: auto;
+                transition: .5s ease-out;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
   
+              &:not(.text-link):hover{
+                transform: scale(1.1) rotate3d(0, 0, 1, 360deg);
+              }
+
               &::before{
                 height: .25rem;
               } // config to use with hover, like a underlined text
@@ -46,11 +60,11 @@
         .text-block{
           max-width: 95%;
           #introduction-text{
-            font-size: 3rem;
+            font-size: 2.5rem;
           } 
   
           #occupation-area{
-            font-size: 3.5rem;
+            font-size: 2.75rem;
           }
   
           p{
@@ -59,11 +73,11 @@
   
           .buttons-div{ 
             .btn-primary{
-              font-size: 2rem;
+              font-size: 1.75rem;
             } // .btn-primary end
   
             .btn-outline-primary{
-              font-size: 2rem;
+              font-size: 1.75rem;
               border-width: .3rem ;
             } // .btn-outline-primary end
           } // .buttons-div end
@@ -90,11 +104,11 @@
       .techs-block-itens{
         gap: 3rem;
         h3{
-          font-size: 2.8rem;
+          font-size: 2.5rem;
         }
   
         span{
-          font-size: 1.9rem;
+          font-size: 1.75rem;
         }
   
         // Config to techs part
@@ -137,15 +151,15 @@
               .swiper-slide{
                 .projects{
                   height: 40rem !important;
-                  grid-template-rows: 21rem auto auto;  
+                  grid-template-rows: 20rem auto auto;  
   
                   section{
                     h4{
-                      font-size: 3rem;
+                      font-size: 2.5rem;
                       margin-bottom: .3rem;
                     }
                     p{
-                      font-size: 1.8rem;
+                      font-size: 1.6rem;
                     }
                   } // end section
   
@@ -153,9 +167,9 @@
                     grid-area: techs;
                     gap: 3rem;
                   div{
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     img{
-                      width: 3.75rem;
+                      width: 3.5rem;
                     }
                   }
                 } // end techs-used
@@ -164,7 +178,7 @@
                   padding-bottom: 1rem;
   
                   a.btn-primary{
-                    font-size: 1.9rem;
+                    font-size: 1.65rem;
                     padding: .5rem 1.5rem;
                   }
                 }
@@ -191,18 +205,18 @@
       }
       .contact-block-items{
         h3{
-          font-size: 2.8rem;
+          font-size: 2.5rem;
         }
   
         nav.d-flex{
   
           .btn.btn-outline-primary{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             border-width: .3rem;
           } // .btn.btn-outline-primary end
   
           .contact-texts{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
           }
   
           .contact-section-images{
@@ -217,7 +231,7 @@
             .row{
               position: relative;
               .form-control{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
   
                 &:focus{
                   box-shadow: $bg-color;
@@ -225,11 +239,11 @@
               }
   
               label{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
               }
   
               button[type="submit"]{
-                font-size: 2.5rem;
+                font-size: 1.75rem;
               }
             } // .row end
           } // .form end      
@@ -240,9 +254,9 @@
   
   .footer{
     background-color: $bg-dark;
-    height: 7rem;
+    height: 6rem;
     p{
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
 }
@@ -262,10 +276,6 @@
       .header-menu{
         max-width: min-content;
         margin: 0;
-        .navbar-brand{
-          width: 3rem;
-          height: 3rem;
-        }
 
         #main-navbar{
           position: fixed;
@@ -292,8 +302,9 @@
             height: calc(100vh - 6rem);
             flex-direction: column;
             padding: 1rem;
-            gap: 1rem;
+            gap: .5rem !important;
             transition: all .3s ease-in-out;
+            flex-direction: column !important;
 
             .nav-link{
               position: relative;
@@ -450,12 +461,9 @@
   
               .swiper-slide{
                 .projects{
-                  max-width: 100% !important;
                   height: 30rem !important;
-                  background-color: $purple-medium;
-                  grid-template-columns: 1.25fr 1fr;
+                  grid-template-rows: 12rem auto auto;
 
-                  grid-template-rows: 16rem min-content auto;
                   section{
                     h4{
                       font-size: 1.8rem;
@@ -504,7 +512,18 @@
       .contact-block-items{
         grid-template-columns: 1fr;
         gap: 1.5rem;
-  
+
+        .form{
+          .row{
+            margin: 0;
+
+            &>*{
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+        }
+
         h3{
           font-size: 1.4rem;
         }
@@ -610,20 +629,19 @@
                 .projects{
                   max-width: 91.5% !important;
                   height: 32rem !important;
-                  background-color: $purple-medium;
-                  grid-template-columns: 1fr 1fr;
-                  grid-template-rows: 16rem auto auto;
+                  grid-template-rows: 13rem auto auto;
                   gap: .5rem 1rem !important;
-  
-                  img.rounded{
-                    width: 100%;
-                    height: 100%;
-                    filter: brightness(0.8);
+                  
+                  section{
+                    p{
+                      font-size: 1rem;
+                    }
                   }
-  
+
                   .techs-used{
                     max-width: 100%;
                     div{
+                      font-size: 1rem;
                       img{
                         width: 2.2rem;
                       }
@@ -635,7 +653,7 @@
                   grid-area: buttons;
   
                   a.btn-primary{
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                   }
                 }
               } // end projects
@@ -729,11 +747,6 @@
         gap: 2rem;
 
         // Config to techs part
-        .techs-part, .abilities-part{
-          min-height: 5rem;
-          max-height: min-content;
-          justify-self: center;
-        }
         .techs-part{ 
           .elements{
           gap: 1.25rem !important;
@@ -780,11 +793,8 @@
               .swiper-slide{
                 .projects{
                   max-width: 95% !important;
-                  height: 32rem;
-                  background-color: $purple-medium;
                   justify-items: center;
-                  grid-template-columns: 1fr 1fr;
-                  grid-template-rows: 12.5rem repeat(2, min-content) auto;
+                  grid-template-rows: 12rem repeat(3, 1fr);
                   grid-template-areas: 
                   'image image'
                   'text text'
@@ -792,28 +802,21 @@
                   'buttons buttons';
                   gap: .5rem 1rem !important;
   
-                  img.rounded{
-                    width: 80%;
-                    height: 100%;
-                    filter: brightness(0.8);
-                  }
-  
                   section{
                     width: 100%;
                     h4{
-                      font-size: 1.6rem;
+                      font-size: 1.5rem;
                       margin: .2rem;
                     }
                     p{
-                      font-size: 1rem ;
+                      font-size: .9rem ;
                     }
                   } // end section
   
                   .techs-used{
-                    max-width: 100%;
                     div{
                       gap: .5rem !important;
-                      font-size: 1rem;
+                      font-size: .9rem;
                       padding-right: 0;
                       img{
                         width: 2rem;
@@ -825,7 +828,7 @@
                   padding: 0;
                   
                   a.btn-primary{
-                    font-size: 1rem;
+                    font-size: .9rem;
                   }
                 }
               } // end projects
@@ -978,11 +981,6 @@
         gap: 1.5rem;
 
         // Config to techs part
-        .techs-part, .abilities-part{
-          min-height: 5rem;
-          max-height: min-content;
-          justify-self: center;
-        }
         .techs-part{ 
           .elements{
           gap: 1.25rem !important;
@@ -1013,28 +1011,13 @@
     .projects-block{
     
       .projects-block-items{
-  
-        h2{
-          font-size: 2rem;
-        }
-  
         .swiper{
           
           .swiper-wrapper{
               .swiper-slide{
                 .projects{
-                  max-width: 95% !important;
-                  height: 35rem !important;
-                  background-color: $purple-medium;
-                  grid-template-columns: 1fr 1fr;
-                  grid-template-rows: 12.5rem repeat(2, min-content) auto;
-                  grid-template-areas: 
-                  'image image'
-                  'text text'
-                  'techs techs'
-                  'buttons buttons';
-                  gap: .5rem 1rem !important;
-  
+                  height: 34rem !important;
+                  grid-template-rows: 10rem repeat(3, 1fr);  
                   img.rounded{
                     width: 95%;
                     height: 100%;
@@ -1042,7 +1025,6 @@
                   }
   
                   section{
-                    width: 100%;
                     h4{
                       font-size: 1.4rem;
                       margin: .2rem;
@@ -1054,7 +1036,6 @@
                   } // end section
   
                   .techs-used{
-                    max-width: 100%;
                     div{
                       font-size: .9rem;
                       padding-right: 0;
@@ -1091,8 +1072,6 @@
     .navbar{
 
       .header-menu{
-        max-width: min-content;
-        margin: 0;
         .navbar-brand{
           width: 2.5rem;
           height: 2.5rem;
@@ -1206,11 +1185,6 @@
         gap: 1.5rem;
 
         // Config to techs part
-        .techs-part, .abilities-part{
-          min-height: 5rem;
-          max-height: min-content;
-          justify-self: center;
-        }
         .techs-part{ 
           .elements{
           gap: 1.25rem !important;
@@ -1241,11 +1215,6 @@
     .projects-block{
     
       .projects-block-items{
-  
-        h2{
-          font-size: 2rem;
-        }
-  
         .swiper{
           
           .swiper-wrapper{
@@ -1254,25 +1223,12 @@
                   max-width: 100% !important;
                   height: 35rem !important;
                   background-color: $purple-medium;
-                  grid-template-columns: 1fr 1fr;
-                  grid-template-rows: 12.5rem repeat(2, min-content) auto;
-                  grid-template-areas: 
-                  'image image'
-                  'text text'
-                  'techs techs'
-                  'buttons buttons';
+                  grid-template-rows: 8rem repeat(3, 1fr);
                   gap: .5rem 1rem !important;
   
-                  img.rounded{
-                    width: 95%;
-                    height: 100%;
-                    filter: brightness(0.8);
-                  }
-  
                   section{
-                    width: 100%;
                     h4{
-                      font-size: 1.4rem;
+                      font-size: 1.3rem;
                       margin: .1rem;
                     }
                     p{
@@ -1282,23 +1238,20 @@
                   } // end section
   
                   .techs-used{
-                    max-width: 100%;
                     div{
                       font-size: .8rem;
                       padding-right: 0;
                       img{
-                        width: 1.8rem;
+                        width: 1.7rem;
                       }
                     }
                 } // end techs-used
   
                 .buttons-div{
                   padding: 0;
-                  gap: .5rem !important;
                   flex-wrap: wrap;
                   width: 100%;
                   a.btn-primary{
-                    font-size: .9rem;
                     margin: 0 auto;
                   }
                 }

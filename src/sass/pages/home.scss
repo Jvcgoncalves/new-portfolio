@@ -74,14 +74,25 @@ body{
         justify-content: flex-end;
 
         .navbar-nav{
-          flex-direction: row;
-          gap: 3rem;
-
           .nav-link{
             position: relative;
             @include font-styles($second-font, 1.2rem, $light-font);
 
-            &::before{
+            &:not(.text-link){
+              width: 2.5rem;
+              height: auto;
+              transition: .5s ease-out;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            &:not(.text-link):hover{
+              transform: scale(1.1) rotate3d(0, 0, 1, 360deg);
+            }
+
+            &:not(.image-link)::before{
               content: "";
               position: absolute;
               bottom: .5rem;
@@ -91,16 +102,15 @@ body{
               transition: width .3s;
             } // config to use with hover, like a underlined text
 
-            &:hover::before{ 
+            &:not(.image-link):hover::before{ 
               width: 80%;
               background-color: $bg-color;
             }
 
-            &.active::before{
+            &:not(.image-link).active::before{
               width: 100%;
               background-color: $bg-color;
             }
-
           } // end .nav-link
         } //end .navbar-nav
       } // end .collapse
@@ -275,11 +285,11 @@ body{
                 max-width: 100% !important;
                 height: 34rem !important;
                 background-color: $purple-medium;
-                grid-template-columns: 1.25fr 1fr;
-                grid-template-rows: 17rem auto auto;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 15rem auto auto;
                 grid-template-areas: 
-                'image techs'
-                'text text'
+                'image text'
+                'techs techs'
                 'buttons buttons';
 
                 img.rounded{
@@ -406,8 +416,6 @@ body{
           .row{
             position: relative;
             .form-control{
-
-
               &:focus{
                 box-shadow: $bg-color;
               }
