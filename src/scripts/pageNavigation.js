@@ -1,7 +1,9 @@
-import { showResponsiveMenu } from "./responsiveMenu.js"
-
 async function scrollToSection(ev) {
     if (ev.type === 'touchstart') ev.preventDefault()
+
+    if(ev.currentTarget.classList.contains("image-link") === true){
+        window.open(ev.currentTarget.href, '_blank')
+    }
 
     let headerHeight = 95 // header size
     let rect = ''
