@@ -799,7 +799,7 @@ body {
   .main-block .contact-block .contact-block-items .form .row {
     margin: 0;
   }
-  .main-block .contact-block .contact-block-items .form .row > * {
+  .main-block .contact-block .contact-block-items .form .row > *:not(button) {
     padding-left: 0;
     padding-right: 0;
   }
