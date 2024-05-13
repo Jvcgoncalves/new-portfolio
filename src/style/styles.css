@@ -159,7 +159,7 @@ body {
   font-family: "Lexend", arial, sans-serif;
   font-size: 2.65rem;
   color: #222222;
-  background: linear-gradient(180deg, #6800B8 0%, #A869FE 100%);
+  background: linear-gradient(-90deg, #993ee4 40%, #46027e 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -238,7 +238,7 @@ body {
   font-weight: 200;
 }
 .main-block .techs-block .techs-block-itens .techs-part {
-  height: 30rem;
+  min-height: max-content;
   width: 100%;
   box-shadow: 0px 0px 10px 3px #151515 inset;
   transition: 0.5s;
@@ -246,9 +246,10 @@ body {
 .main-block .techs-block .techs-block-itens .techs-part .elements div img {
   width: 3rem;
   height: auto;
+  filter: drop-shadow(0 0 0.15rem #222);
 }
 .main-block .techs-block .techs-block-itens .abilities-part {
-  height: 30rem;
+  min-height: max-content;
   width: 100%;
   box-shadow: 0px 0px 10px 3px #202020 inset;
   transition: 0.5s;
@@ -317,6 +318,7 @@ body {
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .techs-used div img {
   width: 2.5rem;
+  filter: drop-shadow(0 0 0.15rem #222);
 }
 .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div {
   width: max-content;
@@ -518,9 +520,6 @@ body {
   }
   .main-block .techs-block .techs-block-itens span {
     font-size: 1.75rem;
-  }
-  .main-block .techs-block .techs-block-itens .techs-part {
-    height: 34rem;
   }
   .main-block .techs-block .techs-block-itens .techs-part .elements div img {
     width: 4rem;
@@ -741,9 +740,6 @@ body {
   .main-block .techs-block .techs-block-itens span {
     font-size: 1.2rem;
   }
-  .main-block .techs-block .techs-block-itens .techs-part {
-    height: 28rem;
-  }
   .main-block .techs-block .techs-block-itens .techs-part .elements div img {
     width: 2.3rem;
     height: auto;
@@ -838,8 +834,6 @@ body {
     font-size: 1.5rem;
   }
   .main-block .techs-block .techs-block-itens .techs-part, .main-block .techs-block .techs-block-itens .abilities-part {
-    min-height: 5rem;
-    max-height: min-content;
     justify-self: center;
     width: 100%;
   }
@@ -1151,10 +1145,10 @@ body {
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div {
     padding: 0;
-    gap: 0.5rem !important;
+    gap: 0.4rem !important;
   }
   .main-block .projects-block .projects-block-items .swiper .swiper-wrapper .swiper-slide .projects .buttons-div a.btn-primary {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 375px) {

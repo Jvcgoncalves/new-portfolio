@@ -76,8 +76,6 @@
       </div>
       <button id="responsive-menu" ><i class="bi bi-list"></i></button>
     </nav>
-    <!-- Menu button for mobile -->
-    <!-- Menu mobile -->
   </header> <!-- header end -->
 
     <div class="container-fluid main-block p-0 mb-0" data-bs-spy="scroll" data-bs-target="#main-navbar">
@@ -108,7 +106,7 @@
       <div id="techs-block" class="techs-block d-flex flex-column  align-items-center" >
         <h2 class="pt-3">Tecnologias e habilidades</h2>
         <div class="container d-grid techs-block-itens px-3 py-4">
-          <section class="techs-part p-3"  >
+          <section class="techs-part p-4"  >
             <h3 class="mb-4">Tecnologias</h3>
             <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap">
               <div class="d-flex align-items-center gap-1">
@@ -118,9 +116,21 @@
                 </span>
               </div>
               <div class="d-flex align-items-center gap-1">
-                <img src="./src/images/techs-images/reactJS.svg" alt="ReactJS icon">
+                <img src="./src/images/techs-images/angular-icon.svg" alt="JavaScript icon">
                 <span>
-                  RactJS
+                  Angular
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/ts-icon.svg" alt="JavaScript icon">
+                <span>
+                  TypeScript
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <img src="./src/images/techs-images/react-icon.svg" alt="ReactJS icon">
+                <span>
+                  ReactJS
                 </span>
               </div>
               <div class="d-flex align-items-center gap-1">
@@ -173,7 +183,7 @@
               </div>
             </div>
           </section>
-            <section class="abilities-part p-3"  >
+            <section class="abilities-part p-4"  >
               <h3 class="mb-4">Habilidades</h3>
               <div class="elements d-flex column-gap-5 row-gap-4 flex-wrap rounded">
                 <div class="d-flex align-items-center gap-1">
@@ -203,54 +213,6 @@
               <!-- Class swiper-slide is just for the api swiperjs work correctly and inside hava a div with class project to personalize styles -->
               <div class="swiper-slide">
                 <div class="projects d-grid gap-3 rounded p-3 mx-auto">
-                  <img class="rounded" src="./src/images/projects-section/stock-store.png" alt="pokeinfo-image">
-                  <section>
-                    <h4>
-                      Stock manager
-                    </h4>
-                    <p>
-                      Site de gerenciamento de estoque, com login e crud completo. (link para o repositório do back-end no readme do front-end)
-                    </p>
-                  </section>
-                  <section class="techs-used">
-                    <h4>
-                      Tecnologias
-                    </h4>
-                    <div class="techs-used-items flex-wrap gap-3 d-flex">
-                      <div>
-                        <img src="./src/images/techs-images/js.svg" alt="js-icon">
-                        <span>JavaScript</span>
-                      </div>
-                      <div>
-                        <img src="./src/images/techs-images/reactJS.svg" alt="reactjs-icon">
-                        <span>React</span>
-                      </div>
-                      <div>
-                        <img src="./src/images/techs-images/sass.svg" alt="sass-icon">
-                        <span>SASS</span>
-                      </div>
-                      <div>
-                        <img src="./src/images/techs-images/nodeJs.svg" alt="nodejs-icon">
-                        <span>Node JS</span>
-                      </div>
-                      <div>
-                        <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap-icon">
-                        <span>Bootstrap</span>
-                      </div>
-                      <div>
-                        <img src="./src/images/techs-images/expressJs.svg" alt="expressJs-icon">
-                        <span>Express JS</span>
-                      </div>
-                    </div>
-                  </section>
-                  <div class="buttons-div d-flex gap-4 mx-auto">
-                    <a target="_blank" href="https://stock-storejvgc.netlify.app/" class="btn btn-primary">Ver projeto</a>
-                    <a target="_blank" href="https://github.com/Jvcgoncalves/stock-manager" class="btn btn-primary">Ver repositório</a>
-                  </div>
-                </div>
-              </div> <!-- Stock manager project div end -->
-              <div class="swiper-slide">
-                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
                   <img class="rounded" src="./src/images/projects-section/pokeinfo.png" alt="pokeinfo-image">
                   <section>
                     <h4>
@@ -265,33 +227,182 @@
                       Tecnologias
                     </h4>
                     <div class="techs-used-items flex-wrap gap-3 d-flex">
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="./src/images/techs-images/js.svg" alt="js-icon">
                         <span>JavaScript</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="./src/images/techs-images/reactJS.svg" alt="reactjs-icon">
                         <span>React</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="./src/images/techs-images/sass.svg" alt="sass-icon">
                         <span>SASS</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="./src/images/techs-images/pokeApi.png" alt="pokeapi-icon">
                         <span>PokeAPI</span>
-                      </div><div>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap-icon">
                         <span>Bootstrap</span>
                       </div>
                     </div>
                   </section>
                   <div class="buttons-div d-flex gap-4 mx-auto">
-                    <a target="_blank" href="https://pokes-info.netlify.app/" class="btn btn-primary">Ver projeto</a>
-                    <a target="_blank" href="https://github.com/Jvcgoncalves/pokeInfo" class="btn btn-primary">Ver repositório</a>
+                    <a target="_blank" href="https://pokes-info.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/pokeInfo" class="btn btn-primary">Repositório</a>
                   </div>
                 </div>
               </div> <!-- PokeInfo project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="./src/images/projects-section/stock-store.png" alt="pokeinfo-image">
+                  <section>
+                    <h4>
+                      Stock Store
+                    </h4>
+                    <p>
+                      Site de gerenciamento de estoque, com login e crud completo. (link para o repositório do back-end no readme do front-end)
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/reactJS.svg" alt="reactjs-icon">
+                        <span>React</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/sass.svg" alt="sass-icon">
+                        <span>SASS</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/nodeJs.svg" alt="nodejs-icon">
+                        <span>Node JS</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap-icon">
+                        <span>Bootstrap</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/expressJs.svg" alt="expressJs-icon">
+                        <span>Express JS</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://stock-storejvgc.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/stock-manager" class="btn btn-primary">Repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Stock manager project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="./src/images/projects-section/stock-store.png" alt="pokeinfo-image">
+                  <section>
+                    <h4>
+                      Stock manager
+                    </h4>
+                    <p>
+                      Site de gerenciamento de estoque, com login e crud completo. (link para o repositório do back-end no readme do front-end)
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/ts-icon.svg" alt="ts-icon">
+                        <span>TypeScript</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/angular-icon.svg" alt="angular-icon">
+                        <span>Angular</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/sass.svg" alt="sass-icon">
+                        <span>SASS</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/nodeJs.svg" alt="nodejs-icon">
+                        <span>Node JS</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/bootstrap.svg" alt="bootstrap-icon">
+                        <span>Bootstrap</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/expressJs.svg" alt="expressJs-icon">
+                        <span>Express JS</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="./src/images/techs-images/mongodb-icon.svg" alt="mongoDB-icon">
+                        <span>MongoDb</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://organize-yourself.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/to-do-list" class="btn btn-primary">Repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Stock manager project div end -->
+              <div class="swiper-slide">
+                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
+                  <img class="rounded" src="src/images/projects-section/lol-info.png" alt="lol-info-image">
+                  <section>
+                    <h4>
+                      Lol Info
+                    </h4>
+                    <p>
+                      Site com os campeões do league of leagens, com todos os campeões e tabmbém informações e dicas sobre eles.
+                    </p>
+                  </section>
+                  <section class="techs-used">
+                    <h4>
+                      Tecnologias
+                    </h4>
+                    <div class="techs-used-items flex-wrap gap-3 d-flex">
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="src/images/techs-images/js.svg" alt="js-icon">
+                        <span>JavaScript</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="src/images/techs-images/ts-icon.svg" alt="ts-icon">
+                        <span>TypeScript</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="src/images/techs-images/angular-icon.svg" alt="angular-icon">
+                        <span>Angular</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="src/images/techs-images/html.svg" alt="HTML-icon">
+                        <span>HTML</span>
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <img src="src/images/techs-images/sass.svg" alt="css-icon">
+                        <span>SASS</span>
+                      </div>
+                      <div>
+                        <img class="p-1" src="https://s3-us-west-1.amazonaws.com/riot-developer-portal/img/riot-logo.png" alt="riot-api-icon">
+                        <span>Riot API</span>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="buttons-div d-flex gap-4 mx-auto">
+                    <a target="_blank" href="https://lol-info-champs.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/lol-info-angular" class="btn btn-primary">Repositório</a>
+                  </div>
+                </div>
+              </div> <!-- Lol info project div end -->
               <div class="swiper-slide">
                 <div class="projects d-grid gap-3 rounded p-3 mx-auto">
                   <img class="rounded" src="src/images/projects-section/live4motors.png" alt="live4motors-image">
@@ -308,23 +419,23 @@
                       Tecnologias
                     </h4>
                     <div class="techs-used-items flex-wrap gap-3 d-flex">
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/js.svg" alt="js-icon">
                         <span>JavaScript</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/html.svg" alt="html-icon">
                         <span>HTML</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/css.svg" alt="css-icon">
                         <span>CSS</span>
                       </div>
                     </div>
                   </section>
                   <div class="buttons-div d-flex gap-4 mx-auto">
-                    <a target="_blank" href="https://live4motors.netlify.app/" class="btn btn-primary">Ver projeto</a>
-                    <a target="_blank" href="https://github.com/Jvcgoncalves/site-de-veiculos" class="btn btn-primary">Ver repositório</a>
+                    <a target="_blank" href="https://live4motors.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/site-de-veiculos" class="btn btn-primary">Repositório</a>
                   </div>
                 </div>
               </div> <!-- Live for motors project div end -->
@@ -344,70 +455,30 @@
                       Tecnologias
                     </h4>
                     <div class="techs-used-items flex-wrap gap-3 d-flex">
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/js.svg" alt="js-icon">
                         <span>JavaScript</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/html.svg" alt="html-icon">
                         <span>HTML</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/css.svg" alt="css-icon">
                         <span>CSS</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/rest-countries-api.png" class="p-1" alt="restapi-icon">
                         <span>Rest API</span>
                       </div>
                     </div>
                   </section>
                   <div class="buttons-div d-flex gap-4 mx-auto">
-                    <a target="_blank" href="https://guessflags.netlify.app/" class="btn btn-primary">Ver projeto</a>
-                    <a target="_blank" href="https://github.com/Jvcgoncalves/country-game" class="btn btn-primary">Ver repositório</a>
+                    <a target="_blank" href="https://guessflags.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/country-game" class="btn btn-primary">Repositório</a>
                   </div>
                 </div>
               </div> <!-- Guess flags project div end -->
-              <div class="swiper-slide">
-                <div class="projects d-grid gap-3 rounded p-3 mx-auto">
-                  <img class="rounded" src="src/images/projects-section/lol-info.png" alt="lol-ifno-image">
-                  <section>
-                    <h4>
-                      Lol Info
-                    </h4>
-                    <p>
-                      Site com os campeões do league of leagens, com todos os campeões e tabmbém informações e dicas sobre eles.
-                    </p>
-                  </section>
-                  <section class="techs-used">
-                    <h4>
-                      Tecnologias
-                    </h4>
-                    <div class="techs-used-items flex-wrap gap-3 d-flex">
-                      <div>
-                        <img src="src/images/techs-images/js.svg" alt="js-icon">
-                        <span>JavaScript</span>
-                      </div>
-                      <div>
-                        <img src="src/images/techs-images/html.svg" alt="HTML-icon">
-                        <span>HTML</span>
-                      </div>
-                      <div>
-                        <img src="src/images/techs-images/sass.svg" alt="css-icon">
-                        <span>SASS</span>
-                      </div>
-                      <div>
-                        <img class="p-1" src="https://s3-us-west-1.amazonaws.com/riot-developer-portal/img/riot-logo.png" alt="riot-api-icon">
-                        <span>Riot API</span>
-                      </div>
-                    </div>
-                  </section>
-                  <div class="buttons-div d-flex gap-4 mx-auto">
-                    <a target="_blank" href="https://lol-champs-info.netlify.app/" class="btn btn-primary">Ver projeto</a>
-                    <a target="_blank" href="https://github.com/Jvcgoncalves/Lol-champs" class="btn btn-primary">Ver repositório</a>
-                  </div>
-                </div>
-              </div> <!-- Lol info project div end -->
               <div class="swiper-slide">
                 <div class="projects d-grid gap-3 rounded p-3 mx-auto">
                   <img class="rounded" src="src/images/projects-section/STC.png" alt="live4motors-image">
@@ -424,23 +495,23 @@
                       Tecnologias
                     </h4>
                     <div class="techs-used-items flex-wrap gap-3 d-flex">
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/js.svg" alt="js-icon">
                         <span>JavaScript</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/html.svg" alt="HTML-icon">
                         <span>HTML</span>
                       </div>
-                      <div>
+                      <div class="d-flex gap-1 align-items-center">
                         <img src="src/images/techs-images/css.svg" alt="css-icon">
                         <span>CSS</span>
                       </div>
                     </div>
                   </section>
                   <div class="buttons-div d-flex gap-4 mx-auto">
-                    <a target="_blank" href="https://manage-your-time.netlify.app/" class="btn btn-primary">Ver projeto</a>
-                    <a target="_blank" href="https://github.com/Jvcgoncalves/relogio-config" class="btn btn-primary">Ver repositório</a>
+                    <a target="_blank" href="https://manage-your-time.netlify.app/" class="btn btn-primary">Projeto</a>
+                    <a target="_blank" href="https://github.com/Jvcgoncalves/relogio-config" class="btn btn-primary">Repositório</a>
                   </div>
                 </div>
               </div>  <!-- STC project div end -->

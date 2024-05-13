@@ -113,7 +113,6 @@
   
         // Config to techs part
         .techs-part{ 
-            height: 34rem;
           .elements{
             div{
               img{
@@ -423,7 +422,6 @@
 
         // Config to techs part
         .techs-part{ 
-          height: 28rem;          
           .elements{
             div{
               img{
@@ -569,8 +567,6 @@
 
         // Config to techs part
         .techs-part, .abilities-part{
-          min-height: 5rem;
-          max-height: min-content;
           justify-self: center;
           width: 100%;
         }
@@ -1049,9 +1045,9 @@
   
                 .buttons-div{
                   padding: 0;
-                  gap: .5rem !important;
+                  gap: .4rem !important;
                   a.btn-primary{
-                    font-size: .9rem;
+                    font-size: .8rem;
                   }
                 }
               } // end projects

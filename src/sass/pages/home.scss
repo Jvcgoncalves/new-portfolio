@@ -226,7 +226,7 @@ body{
 
       // Config to techs part
       .techs-part{ 
-        height: 30rem;
+        min-height: max-content;
         width: 100%;
         box-shadow: 0px 0px 10px 3px #151515 inset;
         transition: .5s;
@@ -236,6 +236,7 @@ body{
             img{
               width: 3rem;
               height: auto;
+              filter: drop-shadow(0 0 .15rem #222);
             } 
           } // div end
         } // .elements end
@@ -243,7 +244,7 @@ body{
 
       // Config to abilities part
       .abilities-part{
-        height: 30rem;
+        min-height: max-content;
         width: 100%;
         box-shadow: 0px 0px 10px 3px $bg-dark inset;
         transition: .5s;   
@@ -322,6 +323,7 @@ body{
                   font-weight:200;
                   img{
                     width: 2.5rem;
+                    filter: drop-shadow(0 0 .15rem #222);
                   }
                 }
               } // end techs-used
