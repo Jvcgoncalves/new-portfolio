@@ -15,7 +15,7 @@
             gap: 3rem;
   
             .nav-link{
-              font-size: 1.75rem;
+              font-size: 1.4rem;
 
               &:not(.text-link){
                 width: 3.5rem;
@@ -60,24 +60,24 @@
         .text-block{
           max-width: 95%;
           #introduction-text{
-            font-size: 2.5rem;
+            font-size: 2.25rem;
           } 
   
           #occupation-area{
-            font-size: 2.75rem;
+            font-size: 2.5rem;
           }
   
           p{
-            font-size: 2rem;
+            font-size: 1.5rem;
           }
   
           .buttons-div{ 
             .btn-primary{
-              font-size: 1.75rem;
+              font-size: 1.45rem;
             } // .btn-primary end
   
             .btn-outline-primary{
-              font-size: 1.75rem;
+              font-size: 1.45rem;
               border-width: .3rem ;
             } // .btn-outline-primary end
           } // .buttons-div end
@@ -108,7 +108,7 @@
         }
   
         span{
-          font-size: 1.75rem;
+          font-size: 1.25rem;
         }
   
         // Config to techs part
@@ -116,7 +116,7 @@
           .elements{
             div{
               img{
-                width: 4rem;
+                width: 3.5rem;
               } 
             } // div end
           } // .elements end
@@ -124,11 +124,10 @@
   
         // Config to abilities part
         .abilities-part{   
-          height: 34rem;
           .elements{
             div{
               img{
-                width: 5.5rem;
+                width: 4.5rem;
               }
             }
           } // .elements end
@@ -141,7 +140,7 @@
       .projects-block-items{
   
         h2{
-          font-size: 3.4rem;
+          font-size: 3rem;
           margin-top: .5rem;
         }
   
@@ -149,16 +148,16 @@
           .swiper-wrapper{
               .swiper-slide{
                 .projects{
-                  height: 40rem !important;
-                  grid-template-rows: 20rem auto auto;  
+                  height: 33rem !important;
+                  grid-template-rows: 16rem auto auto;  
   
                   section{
                     h4{
-                      font-size: 2.5rem;
+                      font-size: 2rem;
                       margin-bottom: .3rem;
                     }
                     p{
-                      font-size: 1.6rem;
+                      font-size: 1.2rem;
                     }
                   } // end section
   
@@ -166,9 +165,8 @@
                     grid-area: techs;
                     gap: 3rem;
                   div{
-                    font-size: 1.5rem;
                     img{
-                      width: 3.5rem;
+                      width: 2.75rem;
                     }
                   }
                 } // end techs-used
@@ -177,7 +175,7 @@
                   padding-bottom: 1rem;
   
                   a.btn-primary{
-                    font-size: 1.65rem;
+                    font-size: 1.2rem;
                     padding: .5rem 1.5rem;
                   }
                 }
@@ -199,27 +197,27 @@
   
     .contact-block{
       h2{
-        font-size: 3.4rem;
+        font-size: 3rem;
         margin-top: 1.5rem;
       }
       .contact-block-items{
         h3{
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
   
         nav.d-flex{
   
           .btn.btn-outline-primary{
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             border-width: .3rem;
           } // .btn.btn-outline-primary end
   
           .contact-texts{
-            font-size: 1.5rem;
+            font-size: 1.25rem;
           }
   
           .contact-section-images{
-            width: 2.5rem;
+            width: 2.75rem;
           }
         } // nav end
          
@@ -230,7 +228,7 @@
             .row{
               position: relative;
               .form-control{
-                font-size: 1.5rem;
+                font-size: 1.25rem;
   
                 &:focus{
                   box-shadow: $bg-color;
@@ -238,11 +236,11 @@
               }
   
               label{
-                font-size: 1.5rem;
+                font-size: 1.25rem;
               }
   
               button[type="submit"]{
-                font-size: 1.75rem;
+                font-size: 1.5rem;
               }
             } // .row end
           } // .form end      
@@ -296,6 +294,7 @@
             right: 0;
             top: 6rem;
             width: 0;
+            overflow: hidden;
             z-index: 1010;
             background-color: $purple-medium;
             height: calc(100vh - 6rem);
@@ -307,9 +306,9 @@
 
             .nav-link{
               position: relative;
-              font-size: 1.4rem;
+              font-size: 1.1rem;
               font-weight: 300;
-
+              visibility: hidden;
               &::before{
                 content: "";
                 position: absolute;
@@ -328,7 +327,6 @@
               &.active::before{
                 width: 70%;
                 background-color: $bg-color;
-
               }
 
             } // end .nav-link
@@ -342,6 +340,9 @@
 
             .navbar-nav{
               width: 55%;
+              .nav-link{
+                visibility: visible;
+              }
             }
           }
         } // end .collapse
@@ -373,7 +374,6 @@
           }
   
           .buttons-div{
-  
             .btn-primary,.btn-outline-primary{
               font-size: 1.1rem;
 
@@ -417,7 +417,7 @@
         }
   
         span{
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
 
         // Config to techs part
@@ -467,12 +467,12 @@
                       font-size: 1.8rem;
                     }
                     p{
-                      font-size: 1.1rem;
+                      font-size: 1rem;
                     }
                   } // end section
   
-                  .techs-used{
-                    grid-area: techs;
+                .techs-used{
+                  grid-area: techs;
   
                   div{
                     img{
@@ -560,7 +560,7 @@
         }
   
         span{
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
 
         gap: 2rem;
@@ -639,7 +639,6 @@
                   .techs-used{
                     max-width: 100%;
                     div{
-                      font-size: 1rem;
                       img{
                         width: 2.2rem;
                       }
@@ -738,7 +737,7 @@
         }
   
         span{
-          font-size: 1.2rem;
+          font-size: .9rem;
           font-weight: 200;
         }
 
@@ -813,9 +812,6 @@
   
                   .techs-used{
                     div{
-                      gap: .5rem !important;
-                      font-size: .9rem;
-                      padding-right: 0;
                       img{
                         width: 2rem;
                       }
@@ -1011,13 +1007,23 @@
       .projects-block-items{
         .swiper{
           
+          .swiper-button-next{
+            right: .25rem;
+            top: unset;
+            bottom: 0 !important;
+          }
+          .swiper-button-prev{
+            left: .25rem;
+            top: unset;
+            bottom: 0 !important;
+          }
+
           .swiper-wrapper{
               .swiper-slide{
                 .projects{
                   height: 34rem !important;
                   grid-template-rows: 10rem repeat(3, 1fr);  
                   img.rounded{
-                    width: 95%;
                     height: 100%;
                     filter: brightness(0.8);
                   }
@@ -1035,8 +1041,6 @@
   
                   .techs-used{
                     div{
-                      font-size: .9rem;
-                      padding-right: 0;
                       img{
                         width: 2rem;
                       }
@@ -1081,7 +1085,7 @@
 
             .nav-link{
               position: relative;
-              font-size: 1.4rem;
+              font-size: 1rem;
               font-weight: 300;
 
               &::before{
@@ -1216,34 +1220,24 @@
         .swiper{
           
           .swiper-wrapper{
-              .swiper-slide{
-                .projects{
-                  max-width: 100% !important;
-                  height: 35rem !important;
-                  background-color: $purple-medium;
-                  grid-template-rows: 8rem repeat(3, 1fr);
-                  gap: .5rem 1rem !important;
-  
-                  section{
-                    h4{
-                      font-size: 1.3rem;
-                      margin: .1rem;
-                    }
-                    p{
-                      font-size: .8rem ;
-                      margin: .1rem;
-                    }
-                  } // end section
-  
-                  .techs-used{
-                    div{
-                      font-size: .8rem;
-                      padding-right: 0;
-                      img{
-                        width: 1.7rem;
-                      }
-                    }
-                } // end techs-used
+            .swiper-slide{
+              .projects{
+                max-width: 100% !important;
+                height: 30rem !important;
+                background-color: $purple-medium;
+                grid-template-rows: 8rem repeat(3, 1fr);
+                gap: .5rem 1rem !important;
+
+                section{
+                  h4{
+                    font-size: 1.3rem;
+                    margin: .1rem;
+                  }
+                  p{
+                    font-size: .8rem ;
+                    margin: .1rem;
+                  }
+                } // end section
   
                 .buttons-div{
                   padding: 0;

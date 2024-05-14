@@ -140,18 +140,18 @@ body{
       .text-block{
         max-width: 90%;
         #introduction-text{
-          @include font-styles($second-font, 2.2rem, $dark-font);
+          @include font-styles($second-font, 2rem, $dark-font);
           font-weight: 400;
         } 
 
         #occupation-area{
-          @include font-styles($second-font, 2.65rem, $dark-font);
+          @include font-styles($second-font, 2.35rem, $dark-font);
           @include font-gradient();
           font-weight: 600;
         }
 
         p{
-          @include font-styles($second-font,1.3rem,$dark-font);
+          @include font-styles($second-font,1.1rem,$dark-font);
           font-weight: 200;
         }
 
@@ -161,7 +161,7 @@ body{
           .btn-primary{
             background-color: $light-purple;
             border: .1rem solid $light-purple;
-            @include font-styles($second-font,1.4rem,$light-font);
+            @include font-styles($second-font,1.1rem,$light-font);
             font-weight: 500;
             transition: transform .3s ease-in-out;
 
@@ -172,8 +172,8 @@ body{
 
           .btn-outline-primary{
             border: .15rem solid $light-purple;
-            @include font-styles($second-font,1.3rem,$dark-font);
-            font-weight: 500;
+            @include font-styles($second-font,1.1rem,$dark-font);
+            font-weight: 400;
             transition: transform .3s ease-in-out;
 
             &:hover{
@@ -220,7 +220,7 @@ body{
       }
 
       span{
-        @include font-styles($second-font,1.4rem,$light-font);
+        @include font-styles($second-font,1rem,$light-font);
         font-weight: 200;
       }
 
@@ -284,10 +284,10 @@ body{
 
               .projects{
                 max-width: 100% !important;
-                height: 34rem !important;
+                height: 30rem !important;
                 background-color: $purple-medium;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 15rem auto auto;
+                grid-template-rows: 13rem auto auto;
                 grid-template-areas: 
                 'image text'
                 'techs techs'
@@ -304,27 +304,25 @@ body{
                 section{
                   grid-area: text;
                   h4{
-                    @include font-styles($main-font,2.4rem,$light-font);
+                    @include font-styles($main-font,2rem,$light-font);
                     letter-spacing: .1%;
                     margin-bottom: .1rem;
                   }
                   p{
-                    @include font-styles($second-font,1.3rem,$light-font);
+                    @include font-styles($second-font,1rem,$light-font);
                     font-weight:200;
                     margin-bottom: 0;
                   }
                 } // end section
 
-                .techs-used{
+              .techs-used{
                   grid-area: techs;
 
                 div{
-                  @include font-styles($second-font,1.2rem,$light-font);
-                  font-weight:200;
                   img{
-                    width: 2.5rem;
-                    filter: drop-shadow(0 0 .15rem #222);
-                  }
+                  width: 2.5rem;
+                  filter: drop-shadow(0 0 .15rem #222);
+                }
                 }
               } // end techs-used
 
@@ -337,7 +335,7 @@ body{
                   align-self: flex-end;
                   background: $bg-dark;
                   border-color: $bg-dark;
-                  @include font-styles($second-font,1.2rem,$light-font);
+                  @include font-styles($second-font,1rem,$light-font);
                   transition: all .3s ease-in-out;
                   &:hover{
                     transform: scale(1.1);
@@ -383,8 +381,8 @@ body{
         }
 
         .btn.btn-outline-primary{
-          @include font-styles($second-font, 1.1rem, $light-font);
-          font-weight: 900;
+          @include font-styles($second-font, 1rem, $light-font);
+          font-weight: 400;
           border-color: $bg-dark; 
           border-width: .2rem;
 
@@ -396,13 +394,14 @@ body{
           
           &.copied{
             border-color: #99ff46;
-            color: #b9ff7f;
-            background-color: $bg-dark
+            background-color: #99ff46;
+            color: $bg-dark;
+            font-weight: 500
           }
         } // .btn.btn-outline-primary end
 
         .contact-texts{
-          @include font-styles($second-font, 1.2rem, $light-font);
+          @include font-styles($second-font, 1rem, $light-font);
           font-weight: 200;
         }
 
@@ -418,13 +417,14 @@ body{
           .row{
             position: relative;
             .form-control{
+              @include font-styles($second-font, 1rem, $light-font);
               &:focus{
                 box-shadow: $bg-color;
               }
             }
 
             label{
-              @include font-styles($second-font, 1.2rem, $light-font);
+              @include font-styles($second-font, 1rem, $light-font);
               font-weight: 200;
             }
 

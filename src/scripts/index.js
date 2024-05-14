@@ -1,3 +1,4 @@
+import addToolTips from "./addToolTips.js";
 import { addCarousel } from "./carousel.js";
 import { addCopyNumberFunction } from "./copyButton.js";
 import { formPreventDefault } from "./formSubmit.js";
@@ -11,6 +12,7 @@ try{
   limitTextAreaLenght()
   addResponsiveMenuFunctions()
   addCopyNumberFunction()
+  addToolTips()
 } catch (e){
   alert(e.message)
 }
